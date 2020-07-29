@@ -4,7 +4,7 @@ title: nature
 permalink: /nature/
 ---
 
-![](nature.jpg)
+![](/assets/nature.jpg)
 
 I use iNaturalist to document the biota I've seen (particularly insects). I first used my iPhone with a basic 10x loupe to magnify my photos, but that became unwieldy, so in July 2020 I upgraded to a used Canon PowerShot SX40 HS with a Raynox 250 macro lens and a diffused flash on the hot shoe. Thanks to [treegrow](https://www.inaturalist.org/people/treegrow) for giving me the idea for this setup.
 
@@ -44,12 +44,18 @@ I use iNaturalist to document the biota I've seen (particularly insects). I firs
   </table>
 </div>
 
-# Great big adventures in the Great Outdoors
+# adventures in the great outdoors
 
 Most of these were with [Jim](/assets/jim-zion2012.jpg):
+
 * 2004: Tennessee and Kentucky (Mammoth Cave NP)
+
 * 2006: New Mexico (Philmont SC), Wyoming (Devil's Tower NM), South Dakota (Badlands NP, Wind Cave NP, Deadwood)
+
 * 2008: Arizona (Organ Pipe Cactus NM, Kitt Peak, Saguaro NP, Petrified Forest NP, Painted Desert, Canyon de Chelly NM, Grand Canyon NP, Walnut Canyon NM, Wupatki NM, Montezuma's Castle and Well)
+
 * 2012: Utah (Zion NP, Bryce Canyon NP, Grand Escalante NM)
+
 * 2013: Yellowstone NP
+
 * 2016: West Texas (Big Bend NP) and New Mexico (Guadalupe Mountains NP, Carlsbad Caverns NP), Zion again (with Glenn)
