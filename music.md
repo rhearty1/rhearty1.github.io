@@ -4,7 +4,7 @@ title: music
 permalink: /music/
 ---
 
-I enjoy all music, but especially the tune from [bramble scramble](https://twitter.com/David_Wise).
+I enjoy all music, but especially the tune by David Wise from [bramble scramble](https://www.youtube.com/watch?v=qIk6YFTzckc).
 
 ## jokes, jingles, and jigs
 
