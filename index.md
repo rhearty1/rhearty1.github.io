@@ -2,4 +2,4 @@
 layout: default
 ---
 
-![](/assets/shenandoah2019.jpg)
+![](/assets/shenandoah2019.jpeg)
