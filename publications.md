@@ -4,6 +4,6 @@ title: publications
 permalink: /publications/
 ---
 
-![](/assets/bethlehem2019.jpg)
+![](/assets/publications.jpg)
 
 I don't have any yet. Check back soon!

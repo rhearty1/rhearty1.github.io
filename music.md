@@ -4,6 +4,8 @@ title: music
 permalink: /music/
 ---
 
+![](/assets/music.jpg)
+
 I enjoy all music, but especially the tune by David Wise from <a href="https://www.youtube.com/watch?v=qIk6YFTzckc" target="_blank">bramble scramble</a>.
 
 ## jokes, jingles, and jigs
