@@ -4,7 +4,7 @@ title: nature
 permalink: /nature/
 ---
 
-I use iNaturalist to document the biota I've seen (particularly insects). I first used my iPhone with a basic 10x loupe to magnify my photos, but that became unweidly, so in July 2020 I upgraded to a used Canon PowerShot SX40 HS with a Raynox 250 macro lens and a diffused flash on the hot shoe. Thanks to [treegrow](https://www.inaturalist.org/people/treegrow) for giving me the idea for this setup.
+I use iNaturalist to document the biota I've seen (particularly insects). I first used my iPhone with a basic 10x loupe to magnify my photos, but that became unwieldy, so in July 2020 I upgraded to a used Canon PowerShot SX40 HS with a Raynox 250 macro lens and a diffused flash on the hot shoe. Thanks to [treegrow](https://www.inaturalist.org/people/treegrow) for giving me the idea for this setup.
 
 <style type="text/css" media="screen">
 .inat-widget { font-family: Georgia, serif; padding: 10px; line-height: 1;}
