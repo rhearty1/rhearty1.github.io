@@ -24,28 +24,28 @@ Earlier, I had played a few recorded recitals. Here are some highlights:
 
 Bach Cello Suite No. 3 for guitar (2008)
 
-* [Prelude]({{ site.url }}/assets/Prelude.mp3)
-* [Allemande]({{ site.url }}/assets/Allemande.mp3)
-* [Courante]({{ site.url }}/assets/Courante.mp3)
-* [Sarabande]({{ site.url }}/assets/Sarabande.mp3)
-* [Bourrées I & II]({{ site.url }}/assets/Bourrées.mp3)
-* [Gigue]({{ site.url }}/assets/Gigue.mp3)
+* [Prelude](/assets/Prelude.mp3)
+* [Allemande](/assets/Allemande.mp3)
+* [Courante](/assets/Courante.mp3)
+* [Sarabande](/assets/Sarabande.mp3)
+* [Bourrées I & II](/assets/Bourrées.mp3)
+* [Gigue](/assets/Gigue.mp3)
 
 Mompou's Suite Compostelana (2009)
 
-* [Preludio]({{ site.url }}/assets/Preludio.mp3)
-* [Coral]({{ site.url }}/assets/Coral.mp3)
-* [Cuna]({{ site.url }}/assets/Cuna.mp3)
-* [Recitativo]({{ site.url }}/assets/Recitativo.mp3)
-* [Cancion]({{ site.url }}/assets/Cancion.mp3)
-* [Muneira]({{ site.url }}/assets/Muneira.mp3)
+* [Preludio](/assets/Preludio.mp3)
+* [Coral](/assets/Coral.mp3)
+* [Cuna](/assets/Cuna.mp3)
+* [Recitativo](/assets/Recitativo.mp3)
+* [Cancion](/assets/Cancion.mp3)
+* [Muneira](/assets/Muneira.mp3)
 
 Hector Villa Lobos, Preludes and Etudes
 
-* [Etude No. 4]({{ site.url }}/assets/Etude4.mp3)
-* [Etude No. 8]({{ site.url }}/assets/Etude8.mp3)
-* [Prelude No. 1]({{ site.url }}/assets/Prelude1.mp3)
-* [Prelude No. 3]({{ site.url }}/assets/Prelude3.mp3)
-* [Prelude No. 4]({{ site.url }}/assets/Prelude4.mp3)
+* [Etude No. 4](/assets/Etude4.mp3)
+* [Etude No. 8](/assets/Etude8.mp3)
+* [Prelude No. 1](/assets/Prelude1.mp3)
+* [Prelude No. 3](/assets/Prelude3.mp3)
+* [Prelude No. 4](/assets/Prelude4.mp3)
 
-John Dowland, [Lachrimae]({{ site.url }}/assets/Lachrimae.mp3)
+John Dowland, [Lachrimae](/assets/Lachrimae.mp3)
