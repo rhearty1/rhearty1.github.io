@@ -4,21 +4,25 @@ title: music
 permalink: /music/
 ---
 
-# Music history
+Here's a little history of what I've done with my guitar.
 
-* 2002-2005: I played guitar in Town Pasture, a death metal/emo band in Marlboro, NJ, with Zack, Josh, Glenn, Mike, Corey and Andrew. Learned Sabicas from Michael Newman, Bach from Alice Artzt. Thanks goes to my parents, who drove me to lessons since I was twelve.
-* 2005-2010: Went deeper into classical guitar world... with Ray, Julian, Manuel, Cengiz, Paul, Albert, Dave, Pat.
-* 2010-2019: Not a whole lot happened (I needed to fix my guitar), a few notable exceptions with Lauren, Charlie, Jake.
-* 2019-present: fixed my guitar!
+* 1999: Parents bought me a 1996 Ibanez Rx series stratocaster. Andrew gave me a Duncan humbucker, which made it sound awesome. It's now sitting on my repair bench (the electronics are old!).
+* 2001-2005: We (Zack, Josh, Glenn, Mike, Corey and Andrew) formed Town Pasture, a death metal/emo band in Marlboro, NJ. We were the best in Mill Ponds, or at least we thought we were. In 2001 my parents bought me a cheap ($100) Yamaha nylon string guitar, and I became obsessed. I learned Sabicas from Michael Newman at Musician's Workshop, then Bach from Alice Artzt in Princeton. Thanks goes to my parents for driving me to lessons for years. Maureen took me to Musician's Workshop (and studied for her bachelors in nursing while waiting in the car) while Jim took me to Princeton (and visited Labyrinth Books for that hour).
+* 2005-2010: My obsession led me to Peabody, where I delved deeper into classical guitar world with Ray, Julian, Manuel, and friends (Cengiz, Paul, Albert, Dave, Pat). This was so much fun, and an interesting time to study music, especially guitar. Some of us have stayed with it, others followed different trails.
+* 2010-2019: I worked a 9-6 job, then went to grad school. Not a whole lot happened (I needed to fix my guitar), There were a few notable exceptions with Lauren and Charlie.
+* 2019-present: I fixed my guitar! Or, rather, the good folks at Old Town Lutherie did.
 
-# Jokes
+## Jokes, jingles, and jigs
 
 <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/44246847&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-# Serious business
+
+## Recordings
 
 Syzygy (2015), written for cello and guitar by our friend Jacob Polasky
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/203738773&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+## Recitals from way back
 
 Earlier, I had played a few recorded recitals. Here are some highlights:
 
