@@ -7,7 +7,7 @@ tags: [history, heliophysics]
 
 Here is a heliophysics community to investigate using co-citation analysis. Nodes represent articles and edges connect articles that were cited together in more than three other articles between 1960 and 2010.
 
-![]({{ site.url }}/assets/heliophysics-co-citation.svg)  
+![](/assets/heliophysics-co-citation.svg)  
 
 My procedure:
 1. I started with a list of 209 living (or recently deceased) scientists who contributed to solar physics.
