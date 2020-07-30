@@ -6,7 +6,7 @@ permalink: /nature/
 
 ![](/assets/nature.jpg)
 
-I use iNaturalist to document the biota I've seen (particularly insects). I first used my iPhone with a basic 10x loupe to magnify my photos, but that became unwieldy, so in July 2020 I upgraded to a used Canon PowerShot SX40 HS with a Raynox 250 macro lens and a diffused flash on the hot shoe. Thanks to [treegrow](https://www.inaturalist.org/people/treegrow) for giving me the idea for this setup.
+I use iNaturalist to document the plants and animals I've seen. I first used my iPhone with a 10x loupe to magnify my photos, but that became unwieldy. In July 2020, I bought a used Canon PowerShot SX40 HS, a Raynox 250 macro lens, and a diffused flash for the hot shoe. Thanks to [treegrow](https://www.inaturalist.org/people/treegrow) for giving me the idea for this setup.
 
 <style type="text/css" media="screen">
 .inat-widget { font-family: Georgia, serif; padding: 10px; line-height: 1;}
@@ -46,7 +46,7 @@ I use iNaturalist to document the biota I've seen (particularly insects). I firs
 
 # adventures in the great outdoors
 
-Most of these were with [Jim](/assets/jim-zion2012.jpg):
+Most of these were with [Jim](/assets/jim.jpg):
 
 * 2004: Tennessee and Kentucky (Mammoth Cave NP)
 
