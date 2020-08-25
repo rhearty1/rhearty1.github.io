@@ -6,6 +6,6 @@ permalink: /bio/
 
 ![](/assets/ryan.jpg)
 
-I worked as engineer on a couple FAA and Navy projects from 2011 to 2013, then on the radio for Parker Solar Probe from 2014 to 2017. I began a PhD program in history of science and technology in 2017 to better understand engineering and technology in the United States.
+My background is in engineering. I worked for six years at the Johns Hopkins University Applied Physics Laboratory before beginning work toward a PhD in history of science and technology. I study the recent history of engineering communities and pursue two long-term goals, or hopes: to encourage interaction between humanists, social scientists, and engineers, and to support engineering education reform that will enhance inclusion and equity.
 
-I live in Columbia, MD, with Lauren and [Little Bear](/assets/little-bear.jpg).
+I live in Columbia with Lauren and [Little Bear](/assets/little-bear.jpg).
