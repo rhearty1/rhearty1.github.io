@@ -5,7 +5,7 @@ categories: [coding]
 tags: [history, network-analysis]
 ---
 
-For using Sci2 Tool with Web of Science (as described in [this helpful guide](http://scottbot.net/networks-demystified-7-doing-co-citation-analyses/)), I've written [this script]({{ site.url }}/assets/concatenate_webofscience.py) that, with Python 3 installed, should allow you to overcome the limitation of only 500 search results per text file:
+For using Sci2 Tool with Web of Science (as described in [this helpful guide](http://scottbot.net/networks-demystified-7-doing-co-citation-analyses/)), I've written [this script](/assets/concatenate_webofscience.py) that, with Python 3 installed, should allow you to overcome the limitation of only 500 search results per text file:
 
 ```
 import glob, os
