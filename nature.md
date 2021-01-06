@@ -46,16 +46,4 @@ I use [iNaturalist](https://www.inaturalist.org/people/rhearty1) to document the
 
 # adventures in the great outdoors
 
-Most of these were with [Jim](/assets/jim.jpg):
-
-* 2004: Tennessee and Kentucky (Mammoth Cave NP)
-
-* 2006: New Mexico (Philmont SC), Wyoming (Devil's Tower NM), South Dakota (Badlands NP, Wind Cave NP, Deadwood)
-
-* 2008: Arizona (Organ Pipe Cactus NM, Kitt Peak, Saguaro NP, Petrified Forest NP, Painted Desert, Canyon de Chelly NM, Grand Canyon NP, Walnut Canyon NM, Wupatki NM, Montezuma's Castle and Well)
-
-* 2012: Utah (Zion NP, Bryce Canyon NP, Grand Escalante NM)
-
-* 2013: Yellowstone NP
-
-* 2016: West Texas (Big Bend NP) and New Mexico (Guadalupe Mountains NP, Carlsbad Caverns NP), Zion again (with Glenn)
+I have my father [Jim](/assets/jim.jpg) to thank for my interest in natural spaces that have been relatively protected from human activity, places like the National Parks. Together we visited Mammoth Cave (2004); Devil's Tower, [Badlands](/assets/badlands.jpg), and Wind Cave (2007); Organ Pipe Cactus, Kitt Peak, Saguaro, Petrified Forest, Painted Desert, Canyon de Chelly, [Grand Canyon](/assets/grandcanyon.jpg), Walnut Canyon, Wupatki, Montezuma's Castle, and Montezuma's Well (2008); [Zion](/assets/zion.jpg), Bryce Canyon, and Grand Escalante (2012); [Yellowstone](/assets/yellowstone.jpg) (2013); [Big Bend](/assets/bigbend.jpg), Guadalupe Mountains, and Carlsbad Caverns (2016).
