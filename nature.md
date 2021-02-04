@@ -6,7 +6,7 @@ permalink: /nature/
 
 ![](/assets/nature.jpg)
 
-I use [iNaturalist](https://www.inaturalist.org/people/rhearty1) to document the plants and animals I've seen. I first used my iPhone with a 10x loupe to magnify my photos, but that became unwieldy. In July 2020, I bought a used Canon PowerShot SX40 HS, a Raynox 250 macro lens, and a diffused flash for the hot shoe. Thanks to [treegrow](https://www.inaturalist.org/people/treegrow) for giving me the idea for this setup.
+I use [iNaturalist](https://www.inaturalist.org/people/rhearty1) to document the plants and animals I've encountered. For photos, I first used my iPhone with a 10x loupe, but that soon became unwieldy. In July 2020, I bought a used Canon PowerShot SX40 HS, a Raynox 250 macro lens, and a diffused flash for the hot shoe (which I'm still fine-tuning). Thanks to [treegrow](https://www.inaturalist.org/people/treegrow) for giving me the idea for this setup.
 
 <style type="text/css" media="screen">
 .inat-widget { font-family: Georgia, serif; padding: 10px; line-height: 1;}
