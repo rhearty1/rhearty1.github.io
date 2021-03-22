@@ -44,6 +44,16 @@ I use [iNaturalist](https://www.inaturalist.org/people/rhearty1) to document the
   </table>
 </div>
 
-# adventures in the great outdoors
+# Adventures in the great outdoors
+
+## 2021 John Muir Trail thru-hike
+
+Coming soon!
+
+## 2021 Shenandoah portion of the AT
+
+Coming soon!
+
+## Trips with Jim
 
 I've enjoyed many trips with my dad [Jim](/assets/jim.jpg) to National Parks and other protected lands. Together we visited Mammoth Cave (2004); Devil's Tower, [Badlands](/assets/badlands.jpg), and Wind Cave (2007); Organ Pipe Cactus, Saguaro, Petrified Forest, Painted Desert, Canyon de Chelly, [Grand Canyon](/assets/grandcanyon.jpg), Walnut Canyon, Wupatki, Montezuma's Castle, and Montezuma's Well (2008); [Zion](/assets/zion.jpg), Bryce Canyon, and Grand Escalante (2012); [Yellowstone](/assets/yellowstone.jpg) (2013); [Big Bend](/assets/bigbend.jpg), Guadalupe Mountains, and Carlsbad Caverns (2016).
