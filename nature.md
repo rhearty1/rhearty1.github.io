@@ -48,7 +48,7 @@ I use [iNaturalist](https://www.inaturalist.org/people/rhearty1) to document the
 
 ## 2021 John Muir Trail thru-hike
 
-Coming soon!
+I [posted about this](https://www.ryanjhearty.com/john-muir-trail/) back in August 2021!
 
 ## 2021 Shenandoah portion of the AT
 
