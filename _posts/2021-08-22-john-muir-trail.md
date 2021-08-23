@@ -38,7 +38,7 @@ Mildly successful first day on the trail, which was harder and longer than we an
 
 Made it back to the Valley. I had my ankle looked at; it's a small fracture not so bad but not good news. We will carry on! A thunderstorm hit once we arrived at the meadows so we spent the afternoon huddled under a tarp with other hikers eating food from the grill/store. Met some characters: a meteorologist [and surfing instructor] and his girlfriend from the Philippines, a motorcyclist without a house, and two couples--Donna & Brad, Audrey & Alberto--who will join us on the JMT! We start tomorrow!!
 
-![](/assets/jmt/tuolumne.JPG)
+![](/assets/jmt/tuolumne.jpg)
 
 ### 7/29 Lyell Canyon
 
