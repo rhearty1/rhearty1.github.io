@@ -106,9 +106,11 @@ We only hiked 9 miles today into the wide open McClure Meadow. It was a very soc
 
 ### 8/8 LeConte Canyon
 
+This was a long and very fun day. Hiking out of the meadow, we had coffee and breakfast on a rock that overlooked where we had hiked.
+
 ![](/assets/jmt/evolution.jpg)
 
-This was a long and very fun day. Hiking out of the meadow, we had coffee and breakfast on a rock that overlooked where we had hiked. Then we reached the stunning Evolution Lake, where Maddie & Michael had camped--fish jumping and a great waterfall.
+Then we reached the stunning Evolution Lake, where Maddie & Michael had camped--fish jumping and a great waterfall.
 
 ![](/assets/jmt/evolution2.jpg)
 
@@ -132,9 +134,11 @@ We awoke at beautiful Lower Palisades Lake and climbed Mather Pass, which was no
 
 ### 8/11 Rae Lakes (Tan)
 
+We woke up in the meadow with the sun hitting our camp site, making it a bit warmer! We hiked most of the day with Jerry (O Positive), going downhill for what felt like forever and then climbing up to Rae Lakes. Tan had a tough day, feeling tired all day! When we first saw Fin's Dome, it was like a burst of inspiration to keep going.
+
 ![](/assets/jmt/rae.JPG)
 
-We woke up in the meadow with the sun hitting our camp site, making it a bit warmer! We hiked most of the day with Jerry (O Positive), going downhill for what felt like forever and then climbing up to Rae Lakes. Tan had a tough day, feeling tired all day! When we first saw Fin's Dome, it was like a burst of inspiration to keep going. Rae Lakes was fun to wander through and the Painted Lady lives up to her name in every way!
+Rae Lakes was fun to wander through and the Painted Lady lives up to her name in every way!
 
 ![](/assets/jmt/rae2.JPG)
 
@@ -156,8 +160,10 @@ Buck: We awoke and had a nice climb to Forrester Pass, apparently missing a gold
 
 ### 8/14 Day 19 Whitney Portal and Lone Pine (Tan)
 
+Wow! What an ending. Mt Whitney was terrifying, both going up and coming down. I'm grateful to have done it, but won't be back anytime soon! There were lots of people and a few very scary spots. At the top we took pics and called Buck's parents.
+
 ![](/assets/jmt/whitney.jpg)
 
-Wow! What an ending. Mt Whitney was terrifying, both going up and coming down. I'm grateful to have done it, but won't be back anytime soon! There were lots of people and a few very scary spots. At the top we took pics and called Buck's parents. The hike down to the portal is all so green and vibrant with many beautiful spots. A ranger checked our permit and we got to celebrate the end of our big journey. A group of nice guys who had hiked from the portal at 2:30am that morning drove us to Lone Pine, where we showered and ate a huge pasta meal! We are tired and grateful for each moment of this experience!
+The hike down to the portal is all so green and vibrant with many beautiful spots. A ranger checked our permit and we got to celebrate the end of our big journey. A group of nice guys who had hiked from the portal at 2:30am that morning drove us to Lone Pine, where we showered and ate a huge pasta meal! We are tired and grateful for each moment of this experience!
 
 ![](/assets/jmt/portal.jpg)
