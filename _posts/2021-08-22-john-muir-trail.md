@@ -54,7 +54,7 @@ Today we crossed Donahue Pass. It was beautiful and especially the lakes that ca
 
 ![](/assets/jmt/garnet.jpg)
 
-# 7/31 Day 5, The Push to Reds
+### 7/31 Day 5, The Push to Reds
 
 We started the day with a glorious climb out from Garnet Lake. We hiked through waterfalls leading to Shadow Lake, looking for the legendary "jacuzzi." Although unsuccessful, we fit in a lovely swim from a little secluded beach on Shadow Lake. Then switchbacks! Then we walked to Gladys Lake to fill water. Ducks dabbled. A very long stroll through pine forest (Mt Ritter still visible) brought us to Devil's Postpile. We were tired, but finally found our way to Reds Meadow for a burger and milkshake, having hiked about 15 miles.
 

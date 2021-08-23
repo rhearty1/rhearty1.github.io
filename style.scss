@@ -56,12 +56,14 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
+  font-style: italic;
+  color: $gray;
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+  font-size: 16px;
+  color: $lightgray;
 }
 
 p {
