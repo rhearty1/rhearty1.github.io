@@ -5,9 +5,9 @@ categories: [reflection]
 tags: [treks]
 ---
 
-My partner Lauren (Tumblin' Tan) and I (Buckaroo Holiday) recently completed a thru-hike of the JMT. Sharing a report and some pictures!
+Last week, Tumblin' Tan and I completed a trek along the beautiful John Muir Trail. How lucky we were to live almost three weeks immersed in the Range of Light, observing its daily cycles, plants and animals, and eons-long geological processes. It was a dream come true. Sharing a trip report, note on bears, and our transcribed trail journal!
 
-## Trip summary
+## Trip report
 (Note: a version of this was posted to the JMT Facebook group.)
 
 Tuolumne Meadows to Whitney Portal
