@@ -5,7 +5,7 @@ categories: [coding]
 tags: [history, engineering]
 ---
 
-I generated a co-citation network for the journal, *Engineering Studies*.
+I generated a co-citation network for the journal, *Engineering Studies*. To explore the graph yourself, [download this pdf](/assets/engineering-studies-co-citation.pdf).
 
 ![](/assets/engineering-studies-co-citation.svg)  
 
