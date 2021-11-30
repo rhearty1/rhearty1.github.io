@@ -5,11 +5,12 @@ categories: [coding]
 tags: [history, engineering]
 ---
 
-I generated my second co-citation visualization
+I generated a co-citation network for the journal, *Engineering Studies*.
+
 ![](/assets/engineering-studies-co-citation.svg)  
 
 What I did this time:
-1.	Using Web of Science, I downloaded all 173 articles published in Engineering Studies from its inception until 30 November 2021.
+1.	Using Web of Science, I downloaded all 173 articles published in Engineering Studies from its inception in 2009 until 30 November 2021.
 2.	Created a co-citation network using Sci2tool and [this tutorial](http://scottbot.net/networks-demystified-7-doing-co-citation-analyses/).
 3.	In Sci2tool, I removed any edge between articles unless they’ve been cited together more than once.
 4.	In Sci2tool, I removed any remaining isolated components and the small islands, focusing instead on the “blob,” the single strongly connected component shown here.
@@ -31,6 +32,6 @@ Next largest were in blue, green, orange, and gray.
 
 Two smaller ones worth noting are in light gray and pink.
 
-![](/assets/engineering-studies-co-citation/pink.png)
-
 ![](/assets/engineering-studies-co-citation/light-gray.png)
+
+![](/assets/engineering-studies-co-citation/pink.png)
