@@ -5,7 +5,7 @@ categories: [coding]
 tags: [history, engineering]
 ---
 
-I generated a co-citation network for the journal, *Engineering Studies*. To explore the graph yourself, [download this pdf](/assets/engineering-studies-co-citation.pdf).
+I generated a co-citation network for the journal, *Engineering Studies*. Co-citation is defined as the frequency with which two documents are cited together by other documents. To explore the graph, [download this pdf](/assets/engineering-studies-co-citation.pdf), or if you have Gephi, click [here](/assets/engineering-studies-co-citation.gephi).
 
 ![](/assets/engineering-studies-co-citation.svg)  
 
@@ -14,7 +14,7 @@ What I did this time:
 2.	Created a co-citation network using Sci2tool and [this tutorial](http://scottbot.net/networks-demystified-7-doing-co-citation-analyses/).
 3.	In Sci2tool, I removed any edge between articles unless they’ve been cited together more than once.
 4.	In Sci2tool, I removed any remaining isolated components and the small islands, focusing instead on the “blob,” the single strongly connected component shown here.
-5.	In Gephi, I clarified the visualization using [these suggestions](https://www.youtube.com/watch?v=f6ElMvP7ubs). For instance, I color-coated based on modularity class (clusters of articles that tended to cite each other more than the others).
+5.	In Gephi, I clarified the visualization using [these suggestions](https://www.youtube.com/watch?v=f6ElMvP7ubs). For instance, I color-coated based on modularity class (clusters of articles that tended to be cited together more often than others).
 
 There were a few modularity classes. The largest, in purple, was greatly influenced by the work of Wendy Faulkner.
 
