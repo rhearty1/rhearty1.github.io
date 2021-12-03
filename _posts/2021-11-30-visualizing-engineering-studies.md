@@ -5,9 +5,9 @@ categories: [coding]
 tags: [history, engineering]
 ---
 
-I generated a co-citation network for the journal, *Engineering Studies*. Co-citation is defined as the frequency with which two documents are cited together by other documents. To explore the graph, [download this pdf](/assets/engineering-studies-co-citation.pdf), or if you have Gephi, click [here](/assets/engineering-studies-co-citation.gephi).
+I generated a co-citation network for the journal, *Engineering Studies*. Co-citation is defined as the frequency with which two documents are cited together by other documents. To explore the graph, [download this pdf](/assets/engineering-studies-co-citation/es.pdf), or if you have Gephi, click [here](/assets/engineering-studies-co-citation/es.gephi).
 
-![](/assets/engineering-studies-co-citation.svg)  
+![](/assets/engineering-studies-co-citation/es.svg)
 
 What I did this time:
 1.	Using Web of Science, I downloaded all 173 articles published in Engineering Studies from its inception in 2009 until 30 November 2021.
