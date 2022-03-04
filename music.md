@@ -49,6 +49,10 @@ These were recorded at Peabody:
 
 * John Dowland, [Lachrimae](/assets/Lachrimae.mp3)
 
+## Stuff Lauren did that I love
+
+* [Bach tells a story](/assets/bach-tells-a-story.mp3), a project from the early pandemic.
+
 ## A guitar story
 
 My parents bought me a 1996 Ibanez Rx series stratocaster for Christmas 1998. I upgraded it in 1999 with a Duncan humbucker from Andrew. It's now sitting on my repair bench. In high school, Zack, Josh, Glenn, Mike, Corey, Andrew and I formed a death metal/emo band called Town Pasture. Influenced by some mix of Metallica, Iron Maiden, Sonata Arctica, Children of Bodom, and AFI, we played in some real dingy venues in Sayreville and Montclair and only ever had a handful of fans.
