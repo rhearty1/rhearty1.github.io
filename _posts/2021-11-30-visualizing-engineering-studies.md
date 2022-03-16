@@ -11,7 +11,7 @@ I generated a co-citation network for the journal, *Engineering Studies*. Co-cit
 
 What I did this time:
 1.	Using Web of Science, I downloaded all 173 articles published in Engineering Studies from its inception in 2009 until 30 November 2021.
-2.	Created a co-citation network using Sci2tool and [this tutorial](http://scottbot.net/networks-demystified-7-doing-co-citation-analyses/).
+2.	Created a co-citation network using Sci2tool and [this tutorial](http://scottbot.net/networks-demystified-7-doing-co-citation-analyses/) by Scott Weingart.
 3.	In Sci2tool, I removed any edge between articles unless they’ve been cited together more than once.
 4.	In Sci2tool, I removed any remaining isolated components and the small islands, focusing instead on the “blob,” the single strongly connected component shown here.
 5.	In Gephi, I clarified the visualization using [these suggestions](https://www.youtube.com/watch?v=f6ElMvP7ubs). For instance, I color-coated based on modularity class (clusters of articles that tended to be cited together more often than others).
