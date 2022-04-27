@@ -12,7 +12,7 @@ Check out this tune by David Wise from <a href="https://www.youtube.com/watch?v=
 
 ## new pieces
 
-Syzygy (2015), written for cello and guitar by our friend Jake Polasky
+Syzygy (2015), written for cello and guitar by our friend Jake Polasky:
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/203738773&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
