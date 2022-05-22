@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trip Report: Our 2022 Section Hike of the Appalachian Trail from Mathews Arm to Harpers Ferry
+title: Report of our 2022 Section Hike of the Appalachian Trail from Mathews Arm to Harpers Ferry
 categories: [reflection]
 tags: [treks]
 ---
