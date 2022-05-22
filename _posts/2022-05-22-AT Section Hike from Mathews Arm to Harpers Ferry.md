@@ -8,7 +8,7 @@ tags: [treks]
 Mathews Arm to Harpers Ferry
 Saturday, May 14 to Friday, May 20 (7 days)
 
-We embarked Sunday morning and hiked about 15 miles per day. The weather was amazing Tuesday to Thursday, with just an overnight storm on Wednesday evening. (We were camping at Bears Den so it was hardly a problem.) We stayed in three shelters: Tom Floyd Wayside, Manassas Gap, and Rod Hollow. We crossed the bridge into Harpers Ferry around 6:45pm on Thursday, to a majestic view. I barely took any pictures this time, but below are a couple highlights!
+After a fun weekend with Bob, who dropped us off at Mathews Arm Campground on Saturday, we embarked Sunday morning and hiked about 15 miles per day. The weather was amazing Tuesday to Thursday, with just an overnight storm on Wednesday evening. (We were camping at Bears Den so it was hardly a problem.) We stayed in three shelters: Tom Floyd Wayside, Manassas Gap, and Rod Hollow. We crossed the bridge into Harpers Ferry around 6:45pm on Thursday, to a majestic view. I barely took any pictures this time, but below are a couple highlights!
 
 Here we are, looking fresh at the start of the trip.
 ![](/assets/2022-05-at/starting.jpg)
