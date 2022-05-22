@@ -24,6 +24,8 @@ Tuesday was Buck's birthday, and we found many meadows. This field near the day'
 
 ![](/assets/2022-05-at/birthday.jpg)
 
+Buck's nanny also left him [this heartwarming voicemail](/assets/2022-05-at/message-from-nanny.mp3).
+
 On Wednesday, we decided to take it easy after a hard time on the Roller Coaster. We decided to camp and shower at Bears Den, and walked the half-mile down the road to Bears Chase Brewery, with its lovely view east. The family in back was so kind. We chatted with them for a while before the grandpa offered us a beer.
 
 ![](/assets/2022-05-at/bears-chase.jpg)
