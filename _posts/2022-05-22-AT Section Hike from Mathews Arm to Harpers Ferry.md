@@ -11,7 +11,6 @@ Here we are, looking fresh at the start of the trip.
 ![](/assets/2022-05-at/starting.jpg)
 
 ## Trip report
-(Note: a version of this was posted to the JMT Facebook group.)
 
 Mathews Arm to Harpers Ferry
 Saturday, May 14 to Friday, May 20 (7 days)
@@ -71,6 +70,7 @@ At first I thought that I needed three things:
 1. Camp sandals
 2. Lighter, cooler hat
 3. Pillow
+
 But I will continue to use my puffy as pillow (in a smaller bag), I'll pick up a trucker hat somewhere, at some point, but continue to use the Reds hat until then, and I will switch to trail-running shoes. This is all way cheaper.
 
 Tumblin' Tan could actually use one or two new items to better match our new style:
