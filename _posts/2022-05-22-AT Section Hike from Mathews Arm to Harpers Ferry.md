@@ -5,16 +5,15 @@ categories: [reflection]
 tags: [treks]
 ---
 
+Mathews Arm to Harpers Ferry
+Saturday, May 14 to Friday, May 20 (7 days)
+
 We embarked Sunday morning and hiked about 15 miles per day. The weather was amazing Tuesday to Thursday, with just an overnight storm on Wednesday evening. (We were camping at Bears Den so it was hardly a problem.) We stayed in three shelters: Tom Floyd Wayside, Manassas Gap, and Rod Hollow. We crossed the bridge into Harpers Ferry around 6:45pm on Thursday, to a majestic view. I barely took any pictures this time, but below are a couple highlights!
 
 Here we are, looking fresh at the start of the trip.
 ![](/assets/2022-05-at/starting.jpg)
 
-## Trip report
-
-Mathews Arm to Harpers Ferry
-Saturday, May 14 to Friday, May 20 (7 days)
-
+Overview:
 * Estimated starting pack weight: Buckaroo 30, Tan 20.
 * Highs: The little paradise of waterfalls and ripples that we found just south of Bears Den (which was itself a really fun time). Seeing the pileated woodpecker on the last day.
 * Lows: The trail on the last day, the approach to Harpers Ferry, was so rocky that Tan's feet were sore for three days. Also, the Roller Coaster was more strenuous than we expected.
