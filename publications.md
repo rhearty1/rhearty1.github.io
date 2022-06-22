@@ -8,7 +8,7 @@ permalink: /publications/
 
 ## academic
 
-Hearty, Ryan. “Redefining Boundaries: Ruth Myrtle Patrick’s Ecological Program at the Academy of Natural Sciences of Philadelphia, 1947–1975.” *Journal of the History of Biology* 53, no. 4 (December 2020): 587–630. [https://doi.org/10.1007/s10739-020-09622-5](https://doi.org/10.1007/s10739-020-09622-5).
+Hearty, Ryan. “Redefining Boundaries: Ruth Myrtle Patrick’s Ecological Program at the Academy of Natural Sciences of Philadelphia, 1947–1975.” *Journal of the History of Biology* 53, no. 4 (December 2020): 587–630. [https://doi.org/10.1007/s10739-020-09622-5](https://doi.org/10.1007/s10739-020-09622-5). Awarded the [2022 Everett Mendelsohn Prize](https://link.springer.com/article/10.1007/s10739-022-09668-7).
 
 ## engineering
 
