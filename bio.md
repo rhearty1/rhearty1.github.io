@@ -6,7 +6,7 @@ permalink: /bio/
 
 ![](/assets/ryan.jpg)
 
-I'm mostly trained in engineering and history of science. Here's a [short cv](/assets/hearty-cv.pdf). I worked for six years at the Johns Hopkins University Applied Physics Laboratory, where I specialized in wireless communications, signal processing, FPGA design, and hardware testing. Our team built and tested the radio for NASA's Parker Solar Probe.
+I'm mostly trained in engineering and history of science. Here's a [short cv](/assets/hearty-cv.pdf). I worked for six years at the Johns Hopkins University Applied Physics Laboratory, where I specialized in telecommunications and signal processing. Our team built and tested the radio for NASA's Parker Solar Probe.
 
 After completing my work on Solar Probe in 2017, I "switched careers" and joined the PhD program in history of science at Johns Hopkins University, where I've learned how to approach engineering from a historical, humanistic perspective. My dissertation is a history of water quality management in the United States from the 1930s to the 1970s. I want to understand how this multidisciplinary field was sustained through major transformations in environmental knowledge, policy, and activism, and especially how it's been influenced by sanitary and environmental engineers.
 
