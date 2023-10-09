@@ -6,7 +6,7 @@ permalink: /bio/
 
 ![](/assets/ryan.jpg)
 
-At Johns Hopkins University, I study past collaborations across disciplines in order to educate future engineering leaders. Scientists and engineers know that technology shapes society, but few appreciate how much society also shapes science and technology. My teaching focuses on professional cultures of engineering, communication, and ethics. My research explores how experts understood and managed water pollution in the United States since the late nineteenth century.
+At Johns Hopkins University, I study past collaborations across disciplines and cultures in order to educate future engineering leaders. Scientists and engineers know that technology shapes society, but few appreciate how much society also shapes science and technology. My teaching focuses on professional cultures of engineering, communication, and ethics. My research explores how experts understood and managed water pollution in the United States since the late nineteenth century.
 
 I received my PhD in History of Science and Technology at Johns Hopkins University in 2023. My dissertation, titled “The Pollution Experts: Engineers, Biologists, and the Problem of Water Quality in Rivers of the United States, 1935 to 1972,” analyzed the rise and development of water quality management, a multidisciplinary field of applied science, from the New Deal to the Clean Water Act. I wanted to elucidate the perspectives of two groups—engineers and biologists—during a period of striking developments in federal funding and regulations to address a growing crisis.
 
