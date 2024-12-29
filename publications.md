@@ -8,6 +8,8 @@ permalink: /publications/
 
 # selected publications
 
+Thomas De Pree and Ryan Hearty, “Engineering Studies,” in Encyclopedia of Science & Technology Studies, ed. Ulrike Felt and Alan Irwin (Cheltenham: Edward Elgar, 2024).
+
 Hearty, Ryan. “Visualizing Pollution: Representations of Biological Data in Water Pollution Control in the United States, 1948–1962.” *Berichte Zur Wissenschaftsgeschichte* 46, no. 2–3 (September 2023): 206–32. [https://doi.org/10.1002/bewi.202200049](https://doi.org/10.1002/bewi.202200049).
 
 Pell, Hannah, Ryan Hearty, and David Allard. “Why Did the Three Mile Island Unit 1 Reactor Close?” *Physics Today* 75, no. 6 (June 2022): 46–52. [https://doi.org/10.1063/PT.3.5020](https://doi.org/10.1063/PT.3.5020).
