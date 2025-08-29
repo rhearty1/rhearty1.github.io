@@ -10,13 +10,13 @@ permalink: /publications/
 
 Appelhans, Sarah, and Ryan Hearty. “Report on the Workshop, ‘Engineering Interventions: Interdisciplinary Engagements with Engineers’, 12–13 November 2024.” *Engineering Studies* 17, no. 2 (2025): 136–49. [https://doi.org/10.1080/19378629.2025.2517574](https://doi.org/10.1080/19378629.2025.2517574).
 
-Hearty, Ryan. “Review of Sellers, *Race and the Greening of Atlanta: Inequality, Democracy, and Environmental Politics in an Ascendant Metropolis*.” Review of *Race and the Greening of Atlanta*, by Christopher C. Sellers. *H-Environment*, June 12, 2025. [https://www.h-net.org/reviews/showpdf.php?id=61541](https://www.h-net.org/reviews/showpdf.php?id=61541).
+Hearty, Ryan. Review of *Race and the Greening of Atlanta: Inequality, Democracy, and Environmental Politics in an Ascendant Metropolis*, by Christopher C. Sellers. H-Environment, June 12, 2025. [https://www.h-net.org/reviews/showpdf.php?id=61541](https://www.h-net.org/reviews/showpdf.php?id=61541).
 
 Tonn, Jenna, Brit Shields, Ryan Hearty, and Adelheid Voskuhl. “Pedagogical Choices for Navigating and Teaching Sociotechnical Landscapes in Engineering Education.” Paper presented at *2025 ASEE Annual Conference & Exposition*, Montreal, Canada. *Proceedings of the 2025 ASEE Annual Conference and Exposition*, ASEE, June 2025. [https://peer.asee.org/pedagogical-choices-for-navigating-and-teaching-sociotechnical-landscapes-in-engineering-education](https://peer.asee.org/pedagogical-choices-for-navigating-and-teaching-sociotechnical-landscapes-in-engineering-education).
 
 De Pree, Thomas, and Ryan Hearty. “Engineering Studies.” In *Encyclopedia of Science & Technology Studies*, edited by Ulrike Felt and Alan Irwin. Edward Elgar, 2024.
 
-Hearty, Ryan. “Review of Abbate, Janet; Dick, Stephanie, Eds., *Abstractions and Embodiments: New Histories of Computing and Society*.” Review of *Abstractions and Embodiments: New Histories of Computing and Society*, by Janet Abbate and Stephanie Dick. *H-Sci-Med-Tech, H-Review*, November 9, 2024. [https://www.h-net.org/reviews/showrev.php?id=60969](https://www.h-net.org/reviews/showrev.php?id=60969).
+Hearty, Ryan. Review of *Abstractions and Embodiments: New Histories of Computing and Society*, by Janet Abbate and Stephanie Dick. H-Sci-Med-Tech, November 9, 2024. [https://www.h-net.org/reviews/showrev.php?id=60969](https://www.h-net.org/reviews/showrev.php?id=60969).
 
 Hilliard, Amanda Dawn, and Ryan Hearty. “Empowering Engineers: Enhancing Communication Skills through a Technical Communication Lab.” Paper presented at *2024 ASEE Annual Conference & Exposition*, Portland, OR. *Proceedings of the 2024 ASEE Annual Conference and Exposition*, ASEE, June 23, 2024. [https://peer.asee.org/empowering-engineers-enhancing-communication-skills-through-a-technical-communication-lab](https://peer.asee.org/empowering-engineers-enhancing-communication-skills-through-a-technical-communication-lab).
 
