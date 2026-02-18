@@ -2,6 +2,7 @@
 layout: page
 title: music
 permalink: /music/
+published: false
 ---
 
 ![](/assets/music.jpg)
