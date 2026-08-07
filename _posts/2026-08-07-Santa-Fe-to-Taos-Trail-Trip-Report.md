@@ -11,9 +11,9 @@ tags: [treks]
 **Distance:** Roughly 110-115 miles actually hiked; the full GPX route is about 129.75 miles  
 **Elevation:** GPX estimate: 6,955-11,983 ft; roughly +22,677 / -22,716 ft over the full mapped route  
 **Navigation:** Pam's paper guide plus her GPX track loaded in OsmAnd for offline use  
-**Photo album:** https://photos.app.goo.gl/kDeAf7s32TpNdtd96  
-**GPX / route file:** https://caltopo.com/m/F0F357L  
-**Guidebook:** https://santafetotaos.org/product/the-santa-fe-to-taos-trail-offical-guidebook-2nd-edition/  
+**Photo album:** [https://photos.app.goo.gl/kDeAf7s32TpNdtd96](https://photos.app.goo.gl/PqjyzynpZeYeVzK18)  
+**GPX / route file:** [https://caltopo.com/m/F0F357L](https://caltopo.com/m/F0F357L)  
+**Guidebook:** [https://santafetotaos.org/product/the-santa-fe-to-taos-trail-offical-guidebook-2nd-edition/](https://santafetotaos.org/product/the-santa-fe-to-taos-trail-offical-guidebook-2nd-edition/)  
 **Lighterpack:** n/a
 
 > **Mileage note:** Our worksheet records mileage against the mapped route, but we used four alternates that cut roughly 15 miles from the full GPX. Depending on how the alternates are counted, we estimate that we actually walked about 110-115 miles. Lauren's contemporaneous trail journal occasionally gives slightly different daily totals.
@@ -58,7 +58,7 @@ We used four alternate routes:
 3. **FR 438:** We used the road walk instead of the switchbacks down to Rio Chiquito. This road had been part of SF2T v1.0; our impression was that Pam later changed the route to reduce the amount of road walking.
 4. **Drake Canyon alternate / FR 437:** We followed this alternate on the approach toward Taos.
 
-## Day-by-Day Report
+## Day-by-Day Report by Buckaroo
 
 ### Day 1 - Tuesday, 2026/07/21: Santa Fe to the Winsor/Borrego area
 
@@ -94,6 +94,10 @@ We ended the day near the primary Jack's Creek campsite and dry-camped. It was o
 **Camp elevation:** about 9,854 ft  
 **Water:** we filled before camp and dry-camped
 
+This was the day we had to make it up into the Alpine zone, over the side of Trailriders' Wall, through Marmot Barrens, and down the Santa Barbara Divide. We just barely made it to the treeline before thunder struck, as Tan will tell you below.
+
+Yet despite the thunderclaps at our backs, passing over a divide was incredibly beautiful, to look back upon where we walked and toward where we needed to go. As [Kate Wolf sang](https://youtu.be/4fXV5hMhQ20?si=OnTSiIbZcAiZl1et) so beautifully: "It's gone away in yesterday and I find myself on the mountainside, where the rivers change direction across the great divide." 
+
 This was the first of three consecutive days with major thunderstorms and heavy rain. Despite a rough day, Infinity Field itself was remarkably peaceful. The field was full of cows.
 
 Around 8:00 p.m., Buck woke to coyotes howling. We dozed on and off through the night while the calls echoed through the canyon, and around 5:00 a.m. the coyotes started up again. That sound became the defining memory of the trip.
@@ -105,7 +109,7 @@ Around 8:00 p.m., Buck woke to coyotes howling. We dozed on and off through the 
 **Camp elevation:** about 8,417 ft  
 **Water:** sulfur-tasting pump water at Agua Piedra; clear creek water before the storm, badly muddied afterward
 
-The morning was beautiful. We hiked down through the canyon toward Santa Barbara Campground, where we took a long rest and ate macaroni and cheese near the river.
+The morning was beautiful. We hiked down through the canyon toward Santa Barbara Campground, where we took a long rest and ate macaroni and cheese near the river. Buck had Townes Van Zandt tunes on his mind, especially [Two Girls](https://www.youtube.com/watch?v=qj9sHZUbCMU) (because "the clouds didn't look like cotton--they didn't even look like clouds") and Pancho and Lefty.
 
 From there we headed up the Indian Creek Trail in a drizzle. By afternoon, conditions deteriorated badly. We were completely exposed on the Comales Trail / FR 22 when another thunderstorm hit. We took the shortcut rather than climbing toward Ripley Point, probably shaving about two miles, but we still arrived at Agua Piedra drenched and spent the evening wet.
 
@@ -180,7 +184,9 @@ The Blue Bus 300/200 made a point-to-point hike unusually easy. We used it from 
 
 The SF2T felt more remote and more varied than we had expected. Its strongest quality was the succession of different landscapes: city edge, mountain forest, alpine lakes, high passes, canyons, creeks, open fields, forest roads, and finally the approach to Taos. It also had enough rough edges - route-finding, long connectors, road walking, weather exposure, and dry stretches - to feel less like a conventional, fully standardized long-distance trail and more like a developing route that rewards flexibility.
 
-That was part of its appeal. The trip gave us both sustained solitude and a surprising amount of trail community, from the hikers we repeatedly crossed paths with to the people we met at campgrounds. If there is one image that captures the route for us, it is Infinity Field at night: cows settled in the grass, canyon walls in the dark, and coyotes calling from all sides.
+That was part of its appeal. The trip gave us both sustained solitude and a surprising amount of trail community, from the hikers we repeatedly crossed paths with to the people we met at campgrounds. If there is one image that captures the route for Buck, it is Infinity Field at night: cows settled in the grass, canyon walls in the dark, and coyotes calling from all sides. 
+
+That's all from me. Now it's time to hear from Tumblin' Tan.
 
 ---
 
