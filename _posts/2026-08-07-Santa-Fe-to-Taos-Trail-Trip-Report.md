@@ -5,8 +5,6 @@ categories: [reflection]
 tags: [treks]
 ---
 
-# Santa Fe to Taos (SF2T) Trail Trip Report
-
 **Route:** Santa Fe to Taos (SF2T) Trail, northbound  
 **Dates:** 2026/07/21-2026/07/29  
 **Duration:** 9 days, 8 nights  
