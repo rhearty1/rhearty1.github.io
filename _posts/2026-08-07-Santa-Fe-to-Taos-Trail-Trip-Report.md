@@ -63,7 +63,8 @@ We used four alternate routes:
 
 ### Day 1 - Tuesday, 2026/07/21: Santa Fe to the Winsor/Borrego area
 
-**Route mileage:** about 14 miles  
+**Daily mileage:** about 14 miles  
+**Cumulative mileage:** about 14 of ~130 miles  
 **Camp elevation:** about 8,500 ft  
 **Water:** Tesuque Creek
 
@@ -79,7 +80,8 @@ We camped with a group that would become part of the social fabric of the trip: 
 
 ### Day 2 - Wednesday, 2026/07/22: To Lake Katherine
 
-**Mapped cumulative mileage:** about 27 miles  
+**Daily mileage:** about 13 miles  
+**Cumulative mileage:** about 27 of ~130 miles  
 **Camp elevation:** about 11,750 ft  
 **Water:** Lake Katherine
 
@@ -104,7 +106,8 @@ We accidentally camped essentially right on the trail at Lake Katherine.
 
 ### Day 3 - Thursday, 2026/07/23: Toward Jack's Creek
 
-**Mapped cumulative mileage:** about 42 miles  
+**Daily mileage:** about 15 miles  
+**Cumulative mileage:** about 42 of ~130 miles  
 **Camp elevation:** about 10,340 ft  
 **Water:** none at camp; we dry-camped
 
@@ -124,7 +127,8 @@ We ended the day near the primary Jack's Creek campsite and dry-camped. It was o
 
 ### Day 4 - Friday, 2026/07/24: Jack's Creek to Infinity Field
 
-**Mapped cumulative mileage:** about 56 miles  
+**Daily mileage:** about 14 miles  
+**Cumulative mileage:** about 56 of ~130 miles  
 **Camp elevation:** about 9,854 ft  
 **Water:** we filled before camp and dry-camped
 
@@ -162,8 +166,8 @@ Around 8:00 p.m., Buck woke to coyotes howling. We dozed on and off through the 
 
 ### Day 5 - Saturday, 2026/07/25: Infinity Field to Agua Piedra Campground
 
-**Mapped mileage:** about 18 miles  
-**Estimated actual mileage:** about 16 miles  
+**Daily mileage:** about 18 miles (estimated actual: about 16)  
+**Cumulative mileage:** about 74 of ~130 miles  
 **Camp elevation:** about 8,417 ft  
 **Water:** sulfur-tasting pump water at Agua Piedra; clear creek water before the storm, badly muddied afterward
 
@@ -194,7 +198,8 @@ At the campground we met Georgie and Nancy, with whom we later had dinner in Tao
 
 ### Day 6 - Sunday, 2026/07/26: Zero Day at Agua Piedra
 
-**Mileage:** 0
+**Daily mileage:** 0 (zero day)  
+**Cumulative mileage:** about 74 of ~130 miles
 
 We took a full zero day to resupply and recover. The morning was hot and sunny, but even on a rest day we could not escape the monsoon pattern.
 
@@ -210,8 +215,8 @@ We also met Kevin, an Oklahoman who offered us canned peaches and lemonade.
 
 ### Day 7 - Monday, 2026/07/27: Agua Piedra to Fish Gate
 
-**Mapped mileage:** about 21 miles  
-**Estimated actual mileage:** about 19 miles  
+**Daily mileage:** about 21 miles (estimated actual: about 19)  
+**Cumulative mileage:** about 95 of ~130 miles  
 **Camp elevation:** about 9,000 ft  
 **Water:** Rito de la Olla
 
@@ -232,8 +237,8 @@ The mapped day was about 21 miles, but because of the shortcuts we estimate we a
 
 ### Day 8 - Tuesday, 2026/07/28: Fish Gate toward Drake Canyon
 
-**Mapped mileage:** about 20 miles  
-**Estimated actual mileage:** about 14 miles  
+**Daily mileage:** about 20 miles (estimated actual: about 14)  
+**Cumulative mileage:** about 115 of ~130 miles  
 **Camp elevation:** about 7,700 ft  
 **Water:** Steve brought water to camp
 
@@ -251,8 +256,8 @@ Again, the mapped mileage overstated what we actually walked; we estimate about 
 
 ### Day 9 - Wednesday, 2026/07/29: Into Taos
 
-**Mapped mileage:** about 14 miles  
-**Estimated actual mileage:** about 12 miles
+**Daily mileage:** about 14 miles (estimated actual: about 12)  
+**Cumulative mileage:** about 129 of ~130 miles
 
 Our last day was a relatively short finish into Taos. We reached the Taos Cow at around 12:30 p.m. and marked the end of the trip with breakfast burritos.
 
