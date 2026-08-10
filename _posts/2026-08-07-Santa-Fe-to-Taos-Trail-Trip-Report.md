@@ -68,12 +68,12 @@ We used four alternate routes:
 **Camp elevation:** about 8,500 ft  
 **Water:** Tesuque Creek
 
-![](../assets/2026-07-sf2t/santa-fe-plaza.jpg)
+<img src="../assets/2026-07-sf2t/santa-fe-plaza.jpg" alt="Santa Fe Plaza, right before we set out." loading="lazy" width="1599" height="1600">
 *Santa Fe Plaza, right before we set out.*
 
 After breakfast at La Fonda, we left Santa Fe around 11:15 a.m. The first day took us out of the city and into the mountains, eventually reaching water at Tesuque Creek.
 
-![](../assets/2026-07-sf2t/dale-ball-trail.jpg)
+<img src="../assets/2026-07-sf2t/dale-ball-trail.jpg" alt="Climbing out on the Dale Ball Trail, still at the city's edge." loading="lazy" width="1600" height="900">
 *Climbing out on the Dale Ball Trail, still at the city's edge.*
 
 We camped with a group that would become part of the social fabric of the trip: Sage, Spring Roll, Five-Star, Cobbler, and Kinnikinnick.
@@ -85,23 +85,23 @@ We camped with a group that would become part of the social fabric of the trip: 
 **Camp elevation:** about 11,750 ft  
 **Water:** Lake Katherine
 
-![](../assets/2026-07-sf2t/the-wilderness-gate.jpg)
+<img src="../assets/2026-07-sf2t/the-wilderness-gate.jpg" alt="Passing through the gate into the Pecos Wilderness." loading="lazy" width="1600" height="900">
 *Passing through the gate into the Pecos Wilderness.*
 
 This was the climb we had worried about before the trip. We made it to Lake Katherine and avoided a thunderstorm, but the altitude and exertion made themselves felt. The next morning Buck woke with a splitting headache.
 
-![](../assets/2026-07-sf2t/switchbacks-down-to-lake-katherine.jpg)
+<img src="../assets/2026-07-sf2t/switchbacks-down-to-lake-katherine.jpg" alt="Switchbacks on the final approach to Lake Katherine." loading="lazy" width="1600" height="900">
 *Switchbacks on the final approach to Lake Katherine.*
 
-![](../assets/2026-07-sf2t/buck-after-switchbacks-near-lake-k.jpg)
+<img src="../assets/2026-07-sf2t/buck-after-switchbacks-near-lake-k.jpg" alt="Buck, spent, just after the switchbacks." loading="lazy" width="1600" height="900">
 *Buck, spent, just after the switchbacks.*
 
 We accidentally camped essentially right on the trail at Lake Katherine.
 
-![](../assets/2026-07-sf2t/camping-lake-katherine.jpg)
+<img src="../assets/2026-07-sf2t/camping-lake-katherine.jpg" alt="Camp, pitched a little too close to the trail, at Lake Katherine." loading="lazy" width="1600" height="900">
 *Camp, pitched a little too close to the trail, at Lake Katherine.*
 
-![](../assets/2026-07-sf2t/lake-katherine.jpg)
+<img src="../assets/2026-07-sf2t/lake-katherine.jpg" alt="Lake Katherine, the first of the trip's four alpine lakes." loading="lazy" width="1600" height="900">
 *Lake Katherine, the first of the trip's four alpine lakes.*
 
 ### Day 3 - Thursday, 2026/07/23: Toward Jack's Creek
@@ -111,16 +111,16 @@ We accidentally camped essentially right on the trail at Lake Katherine.
 **Camp elevation:** about 10,340 ft  
 **Water:** none at camp; we dry-camped
 
-![](../assets/2026-07-sf2t/stewart-lake.jpg)
+<img src="../assets/2026-07-sf2t/stewart-lake.jpg" alt="Stewart Lake, the second of the trip's four alpine lakes." loading="lazy" width="1600" height="900">
 *Stewart Lake, the second of the trip's four alpine lakes.*
 
-![](../assets/2026-07-sf2t/caves-on-cave-creek-trail.jpg)
+<img src="../assets/2026-07-sf2t/caves-on-cave-creek-trail.jpg" alt="Caves along the Cave Creek Trail." loading="lazy" width="1600" height="900">
 *Caves along the Cave Creek Trail.*
 
-![](../assets/2026-07-sf2t/on-the-way-down-to-dockweiler.jpg)
+<img src="../assets/2026-07-sf2t/on-the-way-down-to-dockweiler.jpg" alt="The descent toward Dockweiler, where Pam encouraged us to sit and contemplate the state of the forest." loading="lazy" width="1600" height="900">
 *The descent toward Dockweiler, where Pam encouraged us to sit and contemplate the state of the forest.*
 
-![](../assets/2026-07-sf2t/rito-pero-field.jpg)
+<img src="../assets/2026-07-sf2t/rito-pero-field.jpg" alt="An open field along the Rito Perro Trail." loading="lazy" width="1600" height="900">
 *An open field along the Rito Perro Trail.*
 
 We ended the day near the primary Jack's Creek campsite and dry-camped. It was one of the more unsettling camps of the trip: lonely, with animal bones nearby and animal sounds continuing through the night.
@@ -134,32 +134,32 @@ We ended the day near the primary Jack's Creek campsite and dry-camped. It was o
 
 This was the day we had to make it up into the Alpine zone, over the side of Trailriders' Wall, through Marmot Barrens, and down the Santa Barbara Divide. We just barely made it to the treeline before thunder struck, as Tan will tell you below.
 
-![](../assets/2026-07-sf2t/mule-deer-in-burnt-woods.jpg)
+<img src="../assets/2026-07-sf2t/mule-deer-in-burnt-woods.jpg" alt="A pair of mule deer outside the burned woods on the climb out of Jack's Creek." loading="lazy" width="1600" height="900">
 *A pair of mule deer outside the burned woods on the climb out of Jack's Creek.*
 
-![](../assets/2026-07-sf2t/arrived-pecos-baldy-lake.jpg)
+<img src="../assets/2026-07-sf2t/arrived-pecos-baldy-lake.jpg" alt="Reaching Pecos Baldy Lake and the alpine zone." loading="lazy" width="1600" height="900">
 *Reaching Pecos Baldy Lake and the alpine zone.*
 
-![](../assets/2026-07-sf2t/trailriders-wall.jpg)
+<img src="../assets/2026-07-sf2t/trailriders-wall.jpg" alt="Trailriders' Wall." loading="lazy" width="1600" height="900">
 *Trailriders' Wall.*
 
-![](../assets/2026-07-sf2t/buck-after-trailriders.jpg)
+<img src="../assets/2026-07-sf2t/buck-after-trailriders.jpg" alt="Buck, after crossing Trailriders' Wall." loading="lazy" width="1600" height="900">
 *Buck, after crossing Trailriders' Wall.*
 
-![](../assets/2026-07-sf2t/tan-at-marmot-barrens.jpg)
+<img src="../assets/2026-07-sf2t/tan-at-marmot-barrens.jpg" alt="Tan at Marmot Barrens." loading="lazy" width="1600" height="900">
 *Tan at Marmot Barrens.*
 
-![](../assets/2026-07-sf2t/three-bighorn-rams-at-marmot-barrens.jpg)
+<img src="../assets/2026-07-sf2t/three-bighorn-rams-at-marmot-barrens.jpg" alt="Three bighorn rams, after we gave them plenty of room to pass." loading="lazy" width="1600" height="900">
 *Three bighorn rams, after we gave them plenty of room to pass.*
 
 Yet despite the thunderclaps at our backs, passing over a divide was incredibly beautiful, to look back upon where we walked and toward where we needed to go. As [Kate Wolf sang](https://youtu.be/4fXV5hMhQ20?si=OnTSiIbZcAiZl1et) so beautifully: "It's gone away in yesterday and I find myself on the mountainside, where the rivers change direction across the great divide." 
 
-![](../assets/2026-07-sf2t/looking-back-up-at-santa-barbara-divide-before-lightning.jpg)
+<img src="../assets/2026-07-sf2t/looking-back-up-at-santa-barbara-divide-before-lightning.jpg" alt="Looking back up at the Santa Barbara Divide, just before the lightning started." loading="lazy" width="1600" height="900">
 *Looking back up at the Santa Barbara Divide, just before the lightning started.*
 
 This was the first of three consecutive days with major thunderstorms and heavy rain. Despite a rough day, Infinity Field itself was remarkably peaceful. The field was full of cows.
 
-![](../assets/2026-07-sf2t/infinity-field-with-cows.jpg)
+<img src="../assets/2026-07-sf2t/infinity-field-with-cows.jpg" alt="Infinity Field, full of cows and remarkably peaceful after the storm." loading="lazy" width="1600" height="900">
 *Infinity Field, full of cows and remarkably peaceful after the storm.*
 
 Around 8:00 p.m., Buck woke to coyotes howling. We dozed on and off through the night while the calls echoed through the canyon, and around 5:00 a.m. the coyotes started up again. That sound became the defining memory of the trip.
@@ -175,23 +175,23 @@ The morning was beautiful. We hiked down through the canyon toward Santa Barbara
 
 From there we headed up the Indian Creek Trail in a drizzle.
 
-![](../assets/2026-07-sf2t/top-of-indian-creek-trail-looking-back-at-santa-barbara-area.jpg)
+<img src="../assets/2026-07-sf2t/top-of-indian-creek-trail-looking-back-at-santa-barbara-area.jpg" alt="Looking back at the Santa Barbara area from the top of the Indian Creek Trail." loading="lazy" width="1600" height="900">
 *Looking back at the Santa Barbara area from the top of the Indian Creek Trail.*
 
-![](../assets/2026-07-sf2t/tan-at-halfway.jpg)
+<img src="../assets/2026-07-sf2t/tan-at-halfway.jpg" alt="Tan at roughly the halfway point of the trip." loading="lazy" width="1600" height="900">
 *Tan at roughly the halfway point of the trip.*
 
-![](../assets/2026-07-sf2t/buck-at-halfway.jpg)
+<img src="../assets/2026-07-sf2t/buck-at-halfway.jpg" alt="Buck at roughly the halfway point of the trip." loading="lazy" width="1600" height="900">
 *Buck at roughly the halfway point of the trip.*
 
 By afternoon, conditions deteriorated badly. We were completely exposed on the Comales Trail / FR 22 when another thunderstorm hit.
 
-![](../assets/2026-07-sf2t/comales-trail-forest-road-between-downpours.jpg)
+<img src="../assets/2026-07-sf2t/comales-trail-forest-road-between-downpours.jpg" alt="A brief break between downpours on the Comales Trail forest road." loading="lazy" width="1600" height="900">
 *A brief break between downpours on the Comales Trail forest road.*
 
 We took the shortcut rather than climbing toward Ripley Point, probably shaving about two miles, but we still arrived at Agua Piedra drenched and spent the evening wet.
 
-![](../assets/2026-07-sf2t/calm-before-arriving-at-agua-piedra-cg.jpg)
+<img src="../assets/2026-07-sf2t/calm-before-arriving-at-agua-piedra-cg.jpg" alt="A calm stretch just before reaching Agua Piedra Campground." loading="lazy" width="1600" height="900">
 *A calm stretch just before reaching Agua Piedra Campground.*
 
 At the campground we met Georgie and Nancy, with whom we later had dinner in Taos, and John, who made us Turkish coffee.
@@ -203,12 +203,12 @@ At the campground we met Georgie and Nancy, with whom we later had dinner in Tao
 
 We took a full zero day to resupply and recover. The morning was hot and sunny, but even on a rest day we could not escape the monsoon pattern.
 
-![](../assets/2026-07-sf2t/agua-piedra-cg-zero-day.jpg)
+<img src="../assets/2026-07-sf2t/agua-piedra-cg-zero-day.jpg" alt="A hot, sunny morning at Agua Piedra Campground, before the weather turned." loading="lazy" width="1600" height="900">
 *A hot, sunny morning at Agua Piedra Campground, before the weather turned.*
 
 A heavy downpour lasted roughly from 2:00 to 4:00 p.m., and the rest of the evening stayed wet and overcast.
 
-![](../assets/2026-07-sf2t/storms-on-zero-day.jpg)
+<img src="../assets/2026-07-sf2t/storms-on-zero-day.jpg" alt="The storm that rolled in during our &quot;rest&quot; day." loading="lazy" width="1600" height="900">
 *The storm that rolled in during our "rest" day.*
 
 We also met Kevin, an Oklahoman who offered us canned peaches and lemonade.
@@ -222,17 +222,17 @@ We also met Kevin, an Oklahoman who offered us canned peaches and lemonade.
 
 This was the first of our final big pushes. We used alternate routes, including FR 422, and rejoined our trail group.
 
-![](../assets/2026-07-sf2t/cueva-field.jpg)
+<img src="../assets/2026-07-sf2t/cueva-field.jpg" alt="Cueva Field." loading="lazy" width="1600" height="900">
 *Cueva Field.*
 
-![](../assets/2026-07-sf2t/rejoining-the-gang.jpg)
+<img src="../assets/2026-07-sf2t/rejoining-the-gang.jpg" alt="Rejoining our trail group after the alternate route." loading="lazy" width="1600" height="1200">
 *Rejoining our trail group after the alternate route.*
 
 Cobbler was no longer hiking after hurting his ankle and had instead become a trail angel.
 
 The mapped day was about 21 miles, but because of the shortcuts we estimate we actually walked closer to 19.
 
-![](../assets/2026-07-sf2t/fish-gate-camp.JPG)
+<img src="../assets/2026-07-sf2t/fish-gate-camp.JPG" alt="Camp at Fish Gate." loading="lazy" width="1600" height="1200">
 *Camp at Fish Gate.*
 
 ### Day 8 - Tuesday, 2026/07/28: Fish Gate toward Drake Canyon
@@ -244,12 +244,12 @@ The mapped day was about 21 miles, but because of the shortcuts we estimate we a
 
 We made another long push on alternates and ended at the dry campground near Drake Canyon that Pam had described as "a little rough people-wise." The description felt apt: there was broken glass, spent bullet shells, and dead or dying cottonwoods along the dry Rio Chiquito.
 
-![](../assets/2026-07-sf2t/rio-chiquito-bridge.jpg)
+<img src="../assets/2026-07-sf2t/rio-chiquito-bridge.jpg" alt="The bridge over the dry Rio Chiquito." loading="lazy" width="1600" height="900">
 *The bridge over the dry Rio Chiquito.*
 
 The day had its rewards. We saw numerous beaver dams, and Steve (Cobbler) appeared with water, beer, and cake for an evening trail party.
 
-![](../assets/2026-07-sf2t/party-night-near-drake-canyon.JPG)
+<img src="../assets/2026-07-sf2t/party-night-near-drake-canyon.JPG" alt="An impromptu trail party near Drake Canyon, courtesy of Cobbler." loading="lazy" width="1600" height="1200">
 *An impromptu trail party near Drake Canyon, courtesy of Cobbler.*
 
 Again, the mapped mileage overstated what we actually walked; we estimate about 14 miles rather than 20.
@@ -261,7 +261,7 @@ Again, the mapped mileage overstated what we actually walked; we estimate about 
 
 Our last day was a relatively short finish into Taos. We reached the Taos Cow at around 12:30 p.m. and marked the end of the trip with breakfast burritos.
 
-![](../assets/2026-07-sf2t/we-made-it.JPG)
+<img src="../assets/2026-07-sf2t/we-made-it.JPG" alt="We made it to Taos Plaza." loading="lazy" width="1600" height="1200">
 *We made it to Taos Plaza.*
 
 ## Conditions and Trail Character
