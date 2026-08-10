@@ -274,11 +274,11 @@ Weather became a defining feature of the middle of the trip. We experienced thre
 
 ### Navigation
 
-Carry Pam's guide and GPX, and make sure the track is available offline. We used OsmAnd successfully. The main route is often straightforward, but some overgrown or lightly traveled sections demand active navigation. The available alternates were extremely useful when weather, trail condition, or mileage made the primary route unattractive.
+Carry Pam's guide and GPX, and make sure the track is available offline. We used OsmAnd. The main route is often straightforward, but some overgrown or lightly traveled sections demand active navigation. The available alternates helped us whenever weather, trail condition, or mileage made the primary route less attractive.
 
 ### Water
 
-Pam's water information was adequate for us, but expect some dry camps and pay attention to conditions after storms. At Agua Piedra, for example, the pump water tasted strongly of sulfur, while the creek ran clear before the downpour and became badly soiled afterward.
+Pam's updated water information was crucial. We learned that Little Tesuqueue Creek, Jack's Creek, and La Cueva Lake, were dry, allowing us to plan ahead accordingly.
 
 ### Food and Resupply
 
@@ -286,7 +286,7 @@ We carried far too much food. Our single resupply added more than we needed, and
 
 ### Weather
 
-The monsoon pattern mattered. We had three successive days with thunderstorms, including one period when we were exposed and soaked. Early starts and a willingness to take alternates were important.
+Mornings were beautiful. Most of the nine days were excellent. We had three successive days with thunderstorms, including one period when we were exposed and soaked. Early starts and a willingness to take alternates were important.
 
 ### Transportation
 
@@ -294,17 +294,13 @@ The Blue Bus 300/200 made a point-to-point hike unusually easy. We used it from 
 
 ## Overall Impression
 
-The SF2T felt more remote and more varied than we had expected. Its strongest quality was the succession of different landscapes: city edge, mountain forest, alpine lakes, high passes, canyons, creeks, open fields, forest roads, and finally the approach to Taos. It also had enough rough edges - route-finding, long connectors, road walking, weather exposure, and dry stretches - to feel less like a conventional, fully standardized long-distance trail and more like a developing route that rewards flexibility.
+A beautiful trail overall. Pam has clearly accomplished something extraordinary. We are very grateful. The trail's strongest quality was the succession of different landscapes: city edge, mountain forest, alpine lakes, high passes, canyons, creeks, open fields, forest roads, and finally the approach to Taos. It also had enough rough edges - route-finding, long connectors, road walking, weather exposure, and dry stretches - to feel less like a conventional, fully standardized long-distance trail and more like a developing route that rewards flexibility.
 
-That was part of its appeal. The trip gave us both sustained solitude and a surprising amount of trail community, from the hikers we repeatedly crossed paths with to the people we met at campgrounds. If there is one image that captures the route for Buck, it is Infinity Field at night: cows settled in the grass, canyon walls in the dark, and coyotes calling from all sides. 
-
-That's all from me. Now it's time to hear from Tumblin' Tan.
+That was part of its appeal. The trip gave us both sustained solitude (e.g., 36 hours without seeing anyone, from Lake Stewart to Truchas Lake) and a surprising amount of trail community, from the hikers we repeatedly crossed paths with to the people we met at campgrounds. If there is one memory that recalls the route for Buckaroo, it is Infinity Field at night: cows settled in the grass, canyon walls in the dark, and coyotes calling from all sides. But that's enough from Buck; let's hear from Tumblin' Tan.
 
 ---
 
 # Appendix: Tumblin' Tan's Trail Journal
-
-*Transcribed from Lauren's handwritten trail notebook and lightly organized for readability. Capitalization, punctuation, and paragraph breaks have been regularized, while the substance and voice have been preserved. Crossed-out words have generally been omitted. Where the scan skips notebook pages, the gap is marked rather than reconstructed.*
 
 ## Day 1 - Santa Fe to Borrego Trail
 
@@ -320,13 +316,13 @@ We climbed 4,400 feet today!! It was long and hard, yet only 9 miles somehow. La
 
 ## Day 3 - Lake Katherine to Jack's Creek Campground
 
-Buckaroo woke up in rough shape today, having worried that we spent the night in the middle of the trail. (We did.) We took the omrning slowly before beginning on a long decline that lasted most of the day.
+Buckaroo woke up in rough shape today, having worried that we spent the night in the middle of the trail. (We did.) We took the morning slowly before beginning on a long decline that lasted most of the day.
 
 Towards the end of the evening we arrived at our campsite to find that it wasn't a campsite, only a field with mole hills! Unhappily, we hiked on (especially Tumblin' TAN) until we found a dry creek and creepy campsite that we made work.
 
 ## Day 4 - Jack's Creek to Infinity Field
 
-Today was **EPIC**, and I'm not sure I'll ever tell my dad about it. On the way up, we heard the wind-wails of burned trees.
+Today was **EPIC**. It's the day we had to hike up and across the alpine zone. In the morning, on the way up, we heard the wind-wails of burned trees.
 
 Then we entered the alpine zone and had a beautiful morning at Pecos Baldy, seeing some amazing views.
 
