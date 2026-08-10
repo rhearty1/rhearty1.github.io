@@ -6,7 +6,8 @@ tags: [treks]
 ---
 
 **Route:** Santa Fe to Taos (SF2T) Trail, northbound  
-**Dates:** 2026/07/21-2026/07/29  
+**Dates:** 2026/07/21-2026/07/29.  
+**Hikers:** Tumblin' Tan and Buckaroo.  
 **Duration:** 9 days, 8 nights  
 **Distance:** Roughly 110-115 miles actually hiked; the full GPX route is about 129.75 miles  
 **Elevation:** GPX estimate: 6,955-11,983 ft; roughly +22,677 / -22,716 ft over the full mapped route  
@@ -320,9 +321,7 @@ Towards the end of the evening we arrived at our campsite to find that it wasn't
 
 ## Day 4 - Jack's Creek to Infinity Field
 
-Today was **EPIC**. We started at Jack's Creek campground after hearing animals dig and stomp all night, and needed to climb to alpine lakes and pass through some of the highest terrain on the trail.
-
-On the way up, we heard the wind-wails of burned trees.
+Today was **EPIC**, and I'm not sure I'll ever tell my dad about it. On the way up, we heard the wind-wails of burned trees.
 
 Then we entered the alpine zone and had a beautiful morning at Pecos Baldy, seeing some amazing views.
 
