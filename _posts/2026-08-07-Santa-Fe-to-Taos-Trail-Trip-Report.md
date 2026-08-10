@@ -66,7 +66,13 @@ We used four alternate routes:
 **Camp elevation:** about 8,500 ft  
 **Water:** Tesuque Creek
 
+![](../assets/2026-07-sf2t/santa-fe-plaza.jpg)
+*Santa Fe Plaza, right before we set out.*
+
 After breakfast at La Fonda, we left Santa Fe around 11:15 a.m. The first day took us out of the city and into the mountains, eventually reaching water at Tesuque Creek.
+
+![](../assets/2026-07-sf2t/dale-ball-trail.jpg)
+*Climbing out on the Dale Ball Trail, still at the city's edge.*
 
 We camped with a group that would become part of the social fabric of the trip: Sage, Spring Roll, Five-Star, Cobbler, and Kinnikinnick.
 
@@ -76,15 +82,42 @@ We camped with a group that would become part of the social fabric of the trip: 
 **Camp elevation:** about 11,750 ft  
 **Water:** Lake Katherine
 
+![](../assets/2026-07-sf2t/the-wilderness-gate.jpg)
+*Passing through the gate into the Pecos Wilderness.*
+
 This was the climb we had worried about before the trip. We made it to Lake Katherine and avoided a thunderstorm, but the altitude and exertion made themselves felt. The next morning Buck woke with a splitting headache.
 
+![](../assets/2026-07-sf2t/switchbacks-down-to-lake-katherine.jpg)
+*Switchbacks on the final approach to Lake Katherine.*
+
+![](../assets/2026-07-sf2t/buck-after-switchbacks-near-lake-k.jpg)
+*Buck, spent, just after the switchbacks.*
+
 We accidentally camped essentially right on the trail at Lake Katherine.
+
+![](../assets/2026-07-sf2t/camping-lake-katherine.jpg)
+*Camp, pitched a little too close to the trail, at Lake Katherine.*
+
+![](../assets/2026-07-sf2t/lake-katherine.jpg)
+*Lake Katherine, the first of the trip's four alpine lakes.*
 
 ### Day 3 - Thursday, 2026/07/23: Toward Jack's Creek
 
 **Mapped cumulative mileage:** about 42 miles  
 **Camp elevation:** about 10,340 ft  
 **Water:** none at camp; we dry-camped
+
+![](../assets/2026-07-sf2t/stewart-lake.jpg)
+*Stewart Lake, the second of the trip's four alpine lakes.*
+
+![](../assets/2026-07-sf2t/caves-on-cave-creek-trail.jpg)
+*Caves along the Cave Creek Trail.*
+
+![](../assets/2026-07-sf2t/on-the-way-down-to-dockweiler.jpg)
+*The descent toward Dockweiler, where Pam encouraged us to sit and contemplate the state of the forest.*
+
+![](../assets/2026-07-sf2t/rito-pero-field.jpg)
+*An open field along the Rito Perro Trail.*
 
 We ended the day near the primary Jack's Creek campsite and dry-camped. It was one of the more unsettling camps of the trip: lonely, with animal bones nearby and animal sounds continuing through the night.
 
@@ -96,9 +129,33 @@ We ended the day near the primary Jack's Creek campsite and dry-camped. It was o
 
 This was the day we had to make it up into the Alpine zone, over the side of Trailriders' Wall, through Marmot Barrens, and down the Santa Barbara Divide. We just barely made it to the treeline before thunder struck, as Tan will tell you below.
 
+![](../assets/2026-07-sf2t/mule-deer-in-burnt-woods.jpg)
+*A pair of mule deer outside the burned woods on the climb out of Jack's Creek.*
+
+![](../assets/2026-07-sf2t/arrived-pecos-baldy-lake.jpg)
+*Reaching Pecos Baldy Lake and the alpine zone.*
+
+![](../assets/2026-07-sf2t/trailriders-wall.jpg)
+*Trailriders' Wall.*
+
+![](../assets/2026-07-sf2t/buck-after-trailriders.jpg)
+*Buck, after crossing Trailriders' Wall.*
+
+![](../assets/2026-07-sf2t/tan-at-marmot-barrens.jpg)
+*Tan at Marmot Barrens.*
+
+![](../assets/2026-07-sf2t/three-bighorn-rams-at-marmot-barrens.jpg)
+*Three bighorn rams, after we gave them plenty of room to pass.*
+
 Yet despite the thunderclaps at our backs, passing over a divide was incredibly beautiful, to look back upon where we walked and toward where we needed to go. As [Kate Wolf sang](https://youtu.be/4fXV5hMhQ20?si=OnTSiIbZcAiZl1et) so beautifully: "It's gone away in yesterday and I find myself on the mountainside, where the rivers change direction across the great divide." 
 
+![](../assets/2026-07-sf2t/looking-back-up-at-santa-barbara-divide-before-lightning.jpg)
+*Looking back up at the Santa Barbara Divide, just before the lightning started.*
+
 This was the first of three consecutive days with major thunderstorms and heavy rain. Despite a rough day, Infinity Field itself was remarkably peaceful. The field was full of cows.
+
+![](../assets/2026-07-sf2t/infinity-field-with-cows.jpg)
+*Infinity Field, full of cows and remarkably peaceful after the storm.*
 
 Around 8:00 p.m., Buck woke to coyotes howling. We dozed on and off through the night while the calls echoed through the canyon, and around 5:00 a.m. the coyotes started up again. That sound became the defining memory of the trip.
 
@@ -111,7 +168,26 @@ Around 8:00 p.m., Buck woke to coyotes howling. We dozed on and off through the 
 
 The morning was beautiful. We hiked down through the canyon toward Santa Barbara Campground, where we took a long rest and ate macaroni and cheese near the river. Buck had Townes Van Zandt tunes on his mind, especially [Two Girls](https://www.youtube.com/watch?v=qj9sHZUbCMU) (because "the clouds didn't look like cotton--they didn't even look like clouds") and Pancho and Lefty.
 
-From there we headed up the Indian Creek Trail in a drizzle. By afternoon, conditions deteriorated badly. We were completely exposed on the Comales Trail / FR 22 when another thunderstorm hit. We took the shortcut rather than climbing toward Ripley Point, probably shaving about two miles, but we still arrived at Agua Piedra drenched and spent the evening wet.
+From there we headed up the Indian Creek Trail in a drizzle.
+
+![](../assets/2026-07-sf2t/top-of-indian-creek-trail-looking-back-at-santa-barbara-area.jpg)
+*Looking back at the Santa Barbara area from the top of the Indian Creek Trail.*
+
+![](../assets/2026-07-sf2t/tan-at-halfway.jpg)
+*Tan at roughly the halfway point of the trip.*
+
+![](../assets/2026-07-sf2t/buck-at-halfway.jpg)
+*Buck at roughly the halfway point of the trip.*
+
+By afternoon, conditions deteriorated badly. We were completely exposed on the Comales Trail / FR 22 when another thunderstorm hit.
+
+![](../assets/2026-07-sf2t/comales-trail-forest-road-between-downpours.jpg)
+*A brief break between downpours on the Comales Trail forest road.*
+
+We took the shortcut rather than climbing toward Ripley Point, probably shaving about two miles, but we still arrived at Agua Piedra drenched and spent the evening wet.
+
+![](../assets/2026-07-sf2t/calm-before-arriving-at-agua-piedra-cg.jpg)
+*A calm stretch just before reaching Agua Piedra Campground.*
 
 At the campground we met Georgie and Nancy, with whom we later had dinner in Taos, and John, who made us Turkish coffee.
 
@@ -119,20 +195,39 @@ At the campground we met Georgie and Nancy, with whom we later had dinner in Tao
 
 **Mileage:** 0
 
-We took a full zero day to resupply and recover. The morning was hot and sunny, but even on a rest day we could not escape the monsoon pattern. A heavy downpour lasted roughly from 2:00 to 4:00 p.m., and the rest of the evening stayed wet and overcast.
+We took a full zero day to resupply and recover. The morning was hot and sunny, but even on a rest day we could not escape the monsoon pattern.
+
+![](../assets/2026-07-sf2t/agua-piedra-cg-zero-day.jpg)
+*A hot, sunny morning at Agua Piedra Campground, before the weather turned.*
+
+A heavy downpour lasted roughly from 2:00 to 4:00 p.m., and the rest of the evening stayed wet and overcast.
+
+![](../assets/2026-07-sf2t/storms-on-zero-day.jpg)
+*The storm that rolled in during our "rest" day.*
 
 We also met Kevin, an Oklahoman who offered us canned peaches and lemonade.
 
 ### Day 7 - Monday, 2026/07/27: Agua Piedra to Fish Gate
 
 **Mapped mileage:** about 21 miles  
-**Estimated actual mileage:** about 16-17 miles  
+**Estimated actual mileage:** about 19 miles  
 **Camp elevation:** about 9,000 ft  
 **Water:** Rito de la Olla
 
-This was the first of our final big pushes. We used alternate routes, including FR 422, and rejoined our trail group. Cobbler was no longer hiking after hurting his ankle and had instead become a trail angel.
+This was the first of our final big pushes. We used alternate routes, including FR 422, and rejoined our trail group.
 
-The mapped day was about 21 miles, but because of the shortcuts we estimate we actually walked closer to 16 or 17.
+![](../assets/2026-07-sf2t/cueva-field.jpg)
+*Cueva Field.*
+
+![](../assets/2026-07-sf2t/rejoining-the-gang.jpg)
+*Rejoining our trail group after the alternate route.*
+
+Cobbler was no longer hiking after hurting his ankle and had instead become a trail angel.
+
+The mapped day was about 21 miles, but because of the shortcuts we estimate we actually walked closer to 19.
+
+![](../assets/2026-07-sf2t/fish-gate-camp.JPG)
+*Camp at Fish Gate.*
 
 ### Day 8 - Tuesday, 2026/07/28: Fish Gate toward Drake Canyon
 
@@ -143,7 +238,15 @@ The mapped day was about 21 miles, but because of the shortcuts we estimate we a
 
 We made another long push on alternates and ended at the dry campground near Drake Canyon that Pam had described as "a little rough people-wise." The description felt apt: there was broken glass, spent bullet shells, and dead or dying cottonwoods along the dry Rio Chiquito.
 
-The day had its rewards. We saw numerous beaver dams, and Steve (Cobbler) appeared with water, beer, and cake for an evening trail party. Again, the mapped mileage overstated what we actually walked; we estimate about 14 miles rather than 20.
+![](../assets/2026-07-sf2t/rio-chiquito-bridge.jpg)
+*The bridge over the dry Rio Chiquito.*
+
+The day had its rewards. We saw numerous beaver dams, and Steve (Cobbler) appeared with water, beer, and cake for an evening trail party.
+
+![](../assets/2026-07-sf2t/party-night-near-drake-canyon.JPG)
+*An impromptu trail party near Drake Canyon, courtesy of Cobbler.*
+
+Again, the mapped mileage overstated what we actually walked; we estimate about 14 miles rather than 20.
 
 ### Day 9 - Wednesday, 2026/07/29: Into Taos
 
@@ -151,6 +254,9 @@ The day had its rewards. We saw numerous beaver dams, and Steve (Cobbler) appear
 **Estimated actual mileage:** about 12 miles
 
 Our last day was a relatively short finish into Taos. We reached the Taos Cow at around 12:30 p.m. and marked the end of the trip with breakfast burritos.
+
+![](../assets/2026-07-sf2t/we-made-it.JPG)
+*We made it to Taos Plaza.*
 
 ## Conditions and Trail Character
 
