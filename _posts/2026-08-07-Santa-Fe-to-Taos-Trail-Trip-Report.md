@@ -296,7 +296,7 @@ The Blue Bus 300/200 made a point-to-point hike unusually easy. We used it from 
 
 A beautiful trail overall. Pam has clearly accomplished something extraordinary. We are very grateful. The trail's strongest quality was the succession of different landscapes: city edge, mountain forest, alpine lakes, high passes, canyons, creeks, open fields, forest roads, and finally the approach to Taos. It also had enough rough edges - route-finding, long connectors, road walking, weather exposure, and dry stretches - to feel less like a conventional, fully standardized long-distance trail and more like a developing route that rewards flexibility.
 
-That was part of its appeal. The trip gave us both sustained solitude (e.g., 36 hours without seeing anyone, from Lake Stewart to Truchas Lake) and a surprising amount of trail community, from the hikers we repeatedly crossed paths with to the people we met at campgrounds. If there is one memory that recalls the route for Buckaroo, it is Infinity Field at night: cows settled in the grass, canyon walls in the dark, and coyotes calling from all sides. But that's enough from Buck; let's hear from Tumblin' Tan.
+That was part of its appeal. The trip gave us both sustained solitude (e.g., we saw only one other person over a 48-hour stretch, from Stewart Lake to Santa Barbara Campground) and a surprising amount of trail community, from the hikers we repeatedly crossed paths with to the people we met at campgrounds. If there is one memory that recalls the route for Buckaroo, it is Infinity Field at night: cows settled in the grass, canyon walls in the dark, and coyotes calling from all sides. But that's enough from Buck; let's hear from Tumblin' Tan.
 
 ---
 
