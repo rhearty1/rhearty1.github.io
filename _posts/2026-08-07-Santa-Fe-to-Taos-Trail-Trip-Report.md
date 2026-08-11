@@ -226,7 +226,7 @@ This was the first of our final big pushes. We used alternate routes, including 
 *Cueva Field.*
 
 <img src="../assets/2026-07-sf2t/rejoining-the-gang.jpg" alt="Rejoining our trail group after the alternate route." loading="lazy" width="1600" height="1200">
-*Rejoining our trail group after the alternate route.*
+*Rejoining our trail group along the alternate route FR 422.*
 
 Cobbler was no longer hiking after hurting his ankle and had instead become a trail angel.
 
@@ -244,7 +244,7 @@ The mapped day was about 21 miles, but because of the shortcuts we estimate we a
 
 We made another long push on alternates and ended at the dry campground near Drake Canyon that Pam had described as "a little rough people-wise." The description felt apt: there was broken glass, spent bullet shells, and dead or dying cottonwoods along the dry Rio Chiquito.
 
-<img src="../assets/2026-07-sf2t/rio-chiquito-bridge.jpg" alt="The bridge over the dry Rio Chiquito." loading="lazy" width="1600" height="900">
+<img src="../assets/2026-07-sf2t/rio-chiquito-bridge.jpg" alt="Approaching Rio Chiquito Bridge. This was our last good stop for water until the end, although there were some beaver dams leading up to the Drake Canyon campsite." loading="lazy" width="1600" height="900">
 *The bridge over the dry Rio Chiquito.*
 
 The day had its rewards. We saw numerous beaver dams, and Steve (Cobbler) appeared with water, beer, and cake for an evening trail party.
@@ -301,6 +301,8 @@ That was part of its appeal. The trip gave us both sustained solitude (e.g., we 
 ---
 
 # Appendix: Tumblin' Tan's Trail Journal
+
+While Buck wrote the above trip report retrospectively, Tan added entries to her journal each night, describing the events and experiences of the day. The notes below are transcribed from her handwritten journal.
 
 ## Day 1 - Santa Fe to Borrego Trail
 
