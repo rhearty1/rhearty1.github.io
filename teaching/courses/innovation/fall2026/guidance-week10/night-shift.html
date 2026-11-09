@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team Night Shift: Overnight Cover System Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: same two-figure system-map format as the scholarly publishing map.
+   Figure 1 = the wider system; Figure 2 = the same map with the team's frame in blue and open questions in amber. */
+:root {
+  --bg: #f7f8f6; --panel: #ffffff; --ink: #18202b; --muted: #5d6673; --rule: #d5dad6; --node: #ffffff;
+  --check: #0d7468; --focus: #1d5fd1; --focus-soft: #e8f0fd; --ask: #b45309;
+  --font-display: "IBM Plex Serif", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-map: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg:#12161c; --panel:#181d25; --ink:#e6e9ee; --muted:#a0a8b4; --rule:#2d3440; --node:#1c222b; --check:#3fbfae; --focus:#7aa7ff; --focus-soft:#1d2a44; --ask:#f0a742; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg:#12161c; --panel:#181d25; --ink:#e6e9ee; --muted:#a0a8b4; --rule:#2d3440; --node:#1c222b; --check:#3fbfae; --focus:#7aa7ff; --focus-soft:#1d2a44; --ask:#f0a742; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
+main { max-width: 1240px; margin: 0 auto; padding: 32px 20px 64px; display: grid; gap: 26px; }
+.prose { max-width: 70ch; }
+.crumb { font-size: 0.85rem; color: var(--muted); }
+.crumb a { color: var(--muted); }
+h1, h2 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: 2rem; margin-top: 6px; }
+h2 { font-size: 1.3rem; }
+p { margin: 0 0 12px; }
+.lede { color: var(--muted); font-size: 1.05rem; }
+.meta { font-size: 0.88rem; color: var(--muted); }
+a { color: var(--focus); }
+blockquote { margin: 0; padding: 10px 14px; border-left: 3px solid var(--focus); background: var(--focus-soft); border-radius: 0 6px 6px 0; font-size: 0.95rem; }
+
+figure { margin: 0; background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 18px 14px; }
+.map-scroll { overflow-x: auto; }
+.map { display: block; width: 100%; min-width: 900px; height: auto; font-family: var(--font-map); }
+figcaption { font-size: 0.92rem; color: var(--muted); margin-top: 10px; max-width: 95ch; }
+figcaption b { color: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 0.85rem; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+
+.node rect, .node path.shape { fill: var(--node); stroke: var(--ink); stroke-width: 1.3; }
+.node path.fold { fill: none; stroke: var(--ink); stroke-width: 1.1; }
+.node .title { font-size: 13.5px; font-weight: 600; fill: var(--ink); }
+.node .sub { font-size: 11.5px; fill: var(--muted); }
+.node.focus rect, .node.focus path.shape { stroke: var(--focus); stroke-width: 2; fill: var(--focus-soft); }
+.node.focus .title { fill: var(--focus); }
+.band { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; fill: var(--muted); }
+
+.edge path { fill: none; stroke: var(--ink); stroke-width: 1.4; }
+.edge text { font-size: 11.5px; fill: var(--muted); }
+.edge.flow path { stroke-width: 2.6; }
+.edge.check path { stroke: var(--check); }
+.edge.check text { fill: var(--check); }
+.edge.focus path { stroke: var(--focus); stroke-width: 2.6; }
+.edge.focus text { fill: var(--focus); font-weight: 600; }
+
+.loop circle { fill: var(--panel); stroke-width: 1.5; }
+.loop .tag { font-size: 12px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+.loop .name { font-size: 12px; font-weight: 600; }
+.loop .gloss { font-size: 11px; fill: var(--muted); }
+.loop.R circle { stroke: var(--ink); } .loop.R .tag, .loop.R .name { fill: var(--ink); }
+.loop.B circle { stroke: var(--check); } .loop.B .tag, .loop.B .name { fill: var(--check); }
+.loop.focus circle { stroke: var(--focus); } .loop.focus .tag, .loop.focus .name { fill: var(--focus); }
+
+.marker circle { fill: var(--ask); }
+.marker text { fill: #fff; font-size: 11px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+.muted { opacity: 0.42; }
+
+.columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 26px; }
+ol.qs { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 14px; counter-reset: q; }
+ol.qs li { counter-increment: q; display: grid; grid-template-columns: 26px 1fr; gap: 10px; font-size: 0.94rem; }
+ol.qs li::before { content: counter(q); width: 22px; height: 22px; border-radius: 50%; background: var(--ask); color: #fff; font-size: 12px; font-weight: 600; display: grid; place-items: center; margin-top: 2px; }
+ol.qs b { display: block; }
+ul.plain { padding-left: 18px; margin: 10px 0 0; font-size: 0.93rem; }
+ul.plain li { margin-bottom: 8px; }
+.sources { font-size: 0.85rem; color: var(--muted); }
+
+.proc .lane rect { fill: none; stroke: var(--rule); }
+.proc .lane text { font-size: 12px; font-weight: 600; fill: var(--muted); }
+.proc .step rect { fill: var(--node); stroke: var(--ink); stroke-width: 1.2; }
+.proc .step .title { font-size: 12.5px; font-weight: 600; fill: var(--ink); }
+.proc .step .sub { font-size: 11px; fill: var(--muted); }
+.proc .step.focus rect { stroke: var(--focus); stroke-width: 2; fill: var(--focus-soft); }
+.proc .step.focus .title { fill: var(--focus); }
+.proc .link path { fill: none; stroke: var(--ink); stroke-width: 1.4; }
+.proc .link text { font-size: 11px; fill: var(--muted); }
+.proc .link.back path { stroke: var(--check); stroke-dasharray: 5 4; }
+.proc .link.back text { fill: var(--check); }
+.proc .link.focus path { stroke: var(--focus); stroke-width: 2.2; }
+.proc .link .delay { fill: var(--ask); font-style: italic; font-weight: 600; }
+.alt { display: grid; gap: 12px; margin-top: 10px; }
+.alt div { border: 1px solid var(--rule); border-left: 4px solid var(--check); border-radius: 6px; padding: 10px 14px; background: var(--panel); font-size: 0.94rem; }
+.alt div b { display: block; }
+.alt .where { color: var(--muted); font-size: 0.86rem; }
+.note { border: 1px dashed var(--ask); border-radius: 8px; padding: 10px 14px; font-size: 0.93rem; }
+</style>
+</head>
+<body>
+<main>
+  <header class="prose">
+    <div class="crumb"><a href="index.html">System maps</a> · Innovation &amp; Design I, Fall 2026 · Week 10 guidance</div>
+    <h1>Team Night Shift: Overnight Cover System Map</h1>
+    <p class="lede">How a hospital fills a shift that empties after the roster is set, drawn as one system. The second map shows where your approval decision sits inside it; the third follows a single overnight gap from the sick call to the next day.</p>
+    <p class="meta">Week 10 · Wicked Problems &amp; Systems Mapping · November 9, 2026</p>
+    <blockquote>Your statement, as summarised in the faculty brief: “Before approving cover for an unexpected overnight gap, how can staffing coordinators compare options so qualified staff arrive on time, rest rules are met, and both later shifts and the team providing cover stay staffed?”</blockquote>
+  </header>
+
+  <section class="prose" style="max-width:none">
+    <h2>Feedback for Team Night Shift</h2>
+    <div class="alt">
+      <div><b>What is working</b>This week you completed every worksheet step: four honest loops, five leverage points with a reason for your choice, and a replay probe with clear rules for reading each result. That is a real step forward from Week 9.</div>
+      <div><b>How to push further</b>Three questions to settle. Your registered project is an AI clinical decision tool for your sponsor, and the current problem has neither AI nor a clinical decision; your sponsor should hear about the change from you, with your reasons. Your own key source measures sickness absence, which suggests many gaps are produced upstream, by rosters and understaffing, before anyone makes a call-in decision. And your probe needs past records from a hospital; find out now whether you can get them this semester.</div>
+      <div><b>Where to next: research for this week</b>Before more research, a short conversation with me and your sponsor about scope. Then watch one staffing coordinator work a real gap if you can, and ask two nurses who take extra shifts why they say yes.</div>
+    </div>
+    <blockquote style="margin-top:14px">A question to bring to class: Where do your unexpected gaps come from, and does your sponsor know where your project has gone?</blockquote>
+  </section>
+  <section class="note" style="max-width:none">
+    <h2 style="font-size:1.1rem">How I read your work</h2>
+    <p style="margin-top:8px">I read your deck and the teaching team's weekly summary of it, then drew the wider system your problem lives in, using your sources and a few of my own. I marked where your current frame sits, looked upstream and sideways for places where a change might matter more, and wrote what I found as questions rather than corrections. The questions follow three that research on feedback says matter most: where are you going, how are you going, and where to next. I drafted these maps with help from an AI assistant and checked them against your decks and the sources listed. They are a draft to argue with: if your research shows the map is wrong, that is a finding, and I want to hear it. <a href="index.html#black-box">More on the process</a>.</p>
+  </section>
+
+  <div class="legend" aria-label="Legend">
+    <span><svg width="30" height="18"><rect x="1" y="1" width="28" height="16" rx="3" fill="var(--node)" stroke="var(--ink)"/></svg>people, places &amp; institutions</span>
+    <span><svg width="30" height="10"><line x1="0" y1="5" x2="30" y2="5" stroke="var(--ink)" stroke-width="2.6"/></svg>a gap's life</span>
+    <span><svg width="30" height="10"><line x1="0" y1="5" x2="30" y2="5" stroke="var(--check)" stroke-width="2"/></svg>learning &amp; correction</span>
+    <span><svg width="30" height="18"><rect x="1" y="1" width="28" height="16" rx="3" fill="var(--focus-soft)" stroke="var(--focus)" stroke-width="2"/></svg>your team's current frame</span>
+    <span><svg width="22" height="22"><circle cx="11" cy="11" r="10" fill="var(--ask)"/></svg>a question worth exploring</span>
+  </div>
+  <figure>
+    <div class="map-scroll"><svg class="map" id="map-system" viewBox="0 0 1300 650" role="img" aria-label="System map"></svg></div>
+    <figcaption><b>Figure 1. The system.</b> The middle row follows one gap. The top row limits every choice: rest rules, minimum safe staffing and budget. The bottom row is where gaps and cover come from: the planned roster, the staff pool, standby capacity, what the coordinator can see, and the workers' own rest and health. Your four loops are here: B1 the request closes the gap, B2 recurring gaps build standby, R1 the person called in loses rest, R2 the lending team has less to give. I added R3: understaffing itself makes nurses sick, which creates the next unexpected gap.</figcaption>
+  </figure>
+  <figure>
+    <div class="map-scroll"><svg class="map" id="map-frame" viewBox="0 0 1300 650" role="img" aria-label="System map with the team's frame highlighted and numbered questions"></svg></div>
+    <figcaption><b>Figure 2. Where your statement sits.</b> Blue marks the moment you chose: comparing options and approving one, with what the coordinator can see. That is a clean, testable decision, and your replay probe is well designed. The amber numbers ask whether it is the moment that matters most, or whether the gaps are made upstream, before anyone picks up the phone.</figcaption>
+  </figure>
+  <figure>
+    <div class="map-scroll"><svg class="map" id="map-process" role="img" aria-label="Swimlane process map"></svg></div>
+    <figcaption><b>Figure 3. The process.</b> One overnight gap, lane by lane. Notice how many people touch it before your approval step, and that the first person who says yes may already have decided the outcome.</figcaption>
+  </figure>
+  <section class="columns">
+    <div>
+      <h2>Questions worth exploring</h2>
+      <ol class="qs">
+        <li><span><b>Where do the unexpected gaps come from?</b> Your own key source, Djupedal and colleagues (2025), measured sickness absence as its outcome. A 2025 Southampton study of about 2.5 million shifts linked understaffing in the previous week to more registered nurses reporting sick, and weeks of all long shifts to 26 percent higher odds. If gaps are produced by the roster and the vacancy rate, the call-in decision treats a symptom (R3).</span></li>
+        <li><span><b>Is this still NATO Project 5?</b> You registered an AI clinical decision tool, moved to shift planning in Week 9, and to call-in approval in Week 10, with no AI and no clinical decision. Does your sponsor know, and agree? If you are leaving the sponsor, say why in one sentence.</span></li>
+        <li><span><b>Can you get the records?</b> Your replay probe needs a de-identified past call-in and what the coordinator saw. Which hospital, which coordinator, and what permission would you need? Without the records, the probe cannot run.</span></li>
+        <li><span><b>Is it missing information or missing authority?</b> HSSIB found that managers may not see extra shifts worked elsewhere and may override fatigue warnings. If coordinators already see the warning and approve anyway, better information will not change the choice. Your probe's reading rules can tell these apart; say which result you expect.</span></li>
+        <li><span><b>Is approval where the choice is made?</b> In many offices the first person reached who says yes gets the shift. The order of calls, made before your approval step, may decide the outcome. Watch one coordinator work a gap.</span></li>
+        <li><span><b>Why the ship?</b> The Olivia case is vivid, and you note that its mechanism differs from a hospital call-in. A hospital incident would make the same point with the users you mean to serve.</span></li>
+        <li><span><b>Why do workers say yes?</b> Pay, loyalty, guilt or pressure? The worker is a decision-maker too, and the one whose rest is lost. Talk to two nurses who take extra shifts.</span></li>
+      </ol>
+    </div>
+    <div>
+      <h2>What this map leaves out</h2>
+      <ul class="plain">
+        <li>It shows a hospital. The maritime case you open with has a different chain of command and no bank of spare staff.</li>
+        <li>Agency staff, unions and pay rules are folded into the budget and pool boxes.</li>
+        <li>Patient harm from short staffing is not drawn; it would sit to the right of the journey.</li>
+        <li>I have read the Southampton study only as a press release; check the full paper before relying on the 26 percent figure.</li>
+      </ul>
+      <h2 style="margin-top:22px">Sources</h2>
+      <ul class="plain sources">
+        <li><a href="https://www.southampton.ac.uk/news/2025/04/nurse-understaffing-increases-their-chances-of-going-off-sick.page">University of Southampton, “Nurse understaffing increases their chances of going off sick,” April 2025</a></li>
+        <li><a href="https://doi.org/10.1001/jamanetworkopen.2025.31568">Djupedal et al., “Shift schedule with fewer short daily rest periods and sickness absence among health care workers,” <i>JAMA Network Open</i> 8, no. 9 (2025)</a></li>
+        <li><a href="https://www.hssib.org.uk/patient-safety-investigations/the-impact-of-staff-fatigue-on-patient-safety/investigation-report/">HSSIB, <i>The impact of staff fatigue on patient safety</i> (2025)</a></li>
+        <li><a href="https://taic.org.nz/inquiry/mo-2025-204">TAIC, Bulk carrier Olivia, final report MO-2025-204</a></li>
+        <li>Your team's Week 10 deck, November 2026</li>
+      </ul>
+    </div>
+  </section>
+  <section class="prose" style="max-width:none">
+    <h2>Other problems in this space</h2>
+    <p class="meta">Each is a problem statement another team could have chosen from the same map. They are not better by default. Compare each with yours: who wakes up with it, how much of the system it moves, and whether you can reach the people who have it this semester.</p>
+    <div class="alt">
+      <div><b>Prevent the gap.</b>How might a unit's roster and vacancy plan reduce the sickness absence that creates unexpected gaps?<div class="where">Where it sits: Planned roster and R3. Acts on the inflow; your own sources point here.</div></div>
+      <div><b>Plan for recurring gaps.</b>Your leverage point 5: if certain nights empty out every month, how might standby capacity be built before they do?<div class="where">Where it sits: Standby capacity, B2. A structural fix, slower but larger.</div></div>
+      <div><b>Let workers' rest travel with them.</b>How might a nurse's hours worked elsewhere become visible when another unit asks them to cover?<div class="where">Where it sits: What the coordinator sees. The information gap HSSIB identified.</div></div>
+      <div><b>Return to the sponsor's problem.</b>Clinical guidance for non-medical personnel when help is far away, NATO Project 5 as registered.<div class="where">Where it sits: Outside this map. A different project, worth a conversation with your sponsor.</div></div>
+    </div>
+  </section>
+</main>
+<script>
+const BANDS = [{"t": "Rules & budgets", "x": 30, "y": 28}, {"t": "A gap's life, from sick call to cover", "x": 30, "y": 278}, {"t": "Where gaps and cover come from", "x": 30, "y": 468}];
+const NODES = [{"id": "rest", "x": 30, "y": 40, "w": 270, "t": "Rest & working-time rules", "s": ["under 11 hours counts as short rest;", "local agreements"]}, {"id": "safe", "x": 470, "y": 40, "w": 260, "t": "Safe-staffing policy", "s": ["skill mix, minimum numbers"]}, {"id": "money", "x": 1000, "y": 40, "w": 275, "t": "Budget", "s": ["bank vs agency cost,", "overtime pay"]}, {"id": "abs", "x": 30, "y": 290, "w": 170, "t": "Unexpected gap", "s": ["late sick call,", "acuity rises"], "ask": {"n": 1, "dx": 170, "dy": 0}}, {"id": "notice", "x": 235, "y": 290, "w": 170, "t": "Gap noticed", "s": ["charge nurse", "on shift"]}, {"id": "req", "x": 440, "y": 290, "w": 175, "t": "Cover request", "s": ["to coordinator", "or bank office"], "ask": {"n": 5, "dx": 175, "dy": 0}}, {"id": "opts", "x": 650, "y": 290, "w": 185, "t": "Options compared", "s": ["on-call, bank, agency,", "redeploy, overtime"], "focus": true}, {"id": "appr", "x": 870, "y": 290, "w": 175, "t": "Approval", "s": ["fatigue warnings", "may be overridden"], "focus": true, "ask": {"n": 4, "dx": 175, "dy": 0}}, {"id": "arr", "x": 1080, "y": 290, "w": 195, "t": "Cover arrives", "s": ["travel, skills match;", "a later shift pays"]}, {"id": "roster", "x": 30, "y": 480, "w": 175, "t": "Planned roster", "s": ["built weeks ahead;", "vacancies"]}, {"id": "worker", "x": 235, "y": 480, "w": 170, "t": "Workers' rest & health", "s": ["short rests, fatigue,", "sickness"], "ask": {"n": 7, "dx": 170, "dy": 0}}, {"id": "pool", "x": 440, "y": 480, "w": 175, "t": "Staff pool", "s": ["bank, on-call,", "other teams"]}, {"id": "records", "x": 650, "y": 480, "w": 185, "t": "What the coordinator sees", "s": ["local system only; shifts", "elsewhere invisible"], "focus": true, "ask": {"n": 3, "dx": 185, "dy": 0}}, {"id": "standby", "x": 870, "y": 480, "w": 175, "t": "Standby capacity", "s": ["built slowly from", "recurring gaps"]}];
+const EDGES = [{"d": "M200,323 H232", "label": "", "lx": 217.5, "ly": 283, "kind": "flow"}, {"d": "M405,323 H437", "label": "call", "lx": 422.5, "ly": 283, "kind": "flow"}, {"d": "M615,323 H647", "label": "search", "lx": 632.5, "ly": 283, "kind": "flow", "focus": true}, {"d": "M835,323 H867", "label": "choose", "lx": 852.5, "ly": 283, "kind": "flow", "focus": true}, {"d": "M1045,323 H1077", "label": "approve", "lx": 1062.5, "ly": 283, "kind": "flow"}, {"d": "M170,106 V287", "label": "rest limits", "lx": 177, "ly": 200.5, "anchor": "start"}, {"d": "M600,106 V287", "label": "minimum cover", "lx": 607, "ly": 200.5, "anchor": "start"}, {"d": "M1150,106 V287", "label": "cost limits", "lx": 1157, "ly": 200.5, "anchor": "start"}, {"d": "M118,480 V359", "label": ["roster", "gaps"], "lx": 125, "ly": 423.5, "anchor": "start"}, {"d": "M320,480 V359", "label": ["sickness", "(R3)"], "lx": 327, "ly": 423.5, "anchor": "start"}, {"d": "M527,480 V359", "label": "who can come", "lx": 534, "ly": 423.5, "anchor": "start"}, {"d": "M742,480 V359", "label": ["what is", "visible"], "lx": 749, "ly": 423.5, "anchor": "start", "focus": true}, {"d": "M957,480 V359", "label": ["standby", "(B2)"], "lx": 964, "ly": 423.5, "anchor": "start"}, {"d": "M1177,356 V628 H320 V549", "label": "extra hours shorten rest (R1)", "lx": 748.5, "ly": 622}, {"d": "M1177,290 C1177,195 527,195 527,287", "label": "lending team has less next time (R2)", "lx": 852.0, "ly": 229, "kind": "check"}];
+const LOOPS = [{"tag": "B1", "x": 1050, "y": 395, "name": "Cover request", "kind": "B", "focus": true}, {"tag": "B2", "x": 985, "y": 447, "name": "Standby capacity", "kind": "B"}, {"tag": "R1", "x": 470, "y": 600, "name": "Rest loss", "kind": "R"}, {"tag": "R2", "x": 380, "y": 245, "name": "Lending team", "kind": "R"}, {"tag": "R3", "x": 140, "y": 610, "name": "Understaffing makes sickness", "kind": "R"}];
+
+const PROCESS = {"cols": 9, "lanes": ["Absent|worker", "Charge|nurse", "Staffing|coordinator", "Candidate|worker", "Manager", "Next shift"], "steps": [{"id": "call", "lane": 0, "col": 0, "t": "Calls in sick", "s": ["late evening"], "ask": 1}, {"id": "see", "lane": 1, "col": 1, "t": "Sees the gap", "s": ["acuity, skills"]}, {"id": "ask", "lane": 2, "col": 2, "t": "Searches", "s": ["bank, on-call,", "other units"], "focus": true, "ask": 5}, {"id": "yes", "lane": 3, "col": 3, "t": "Says yes", "s": ["pay, duty,", "guilt?"], "ask": 7}, {"id": "cmp", "lane": 2, "col": 4, "t": "Compares", "s": ["rest, skills,", "travel time"], "focus": true, "ask": 3}, {"id": "ok", "lane": 4, "col": 5, "t": "Approves", "s": ["or overrides", "a warning"], "focus": true, "ask": 4}, {"id": "go", "lane": 3, "col": 6, "t": "Travels, works", "s": ["short rest"]}, {"id": "short", "lane": 5, "col": 7, "t": "Runs short?", "s": ["tired worker or", "lent colleague"]}, {"id": "next", "lane": 0, "col": 8, "t": "Next sick call", "s": ["fatigue, burnout"]}], "links": [{"a": "call", "b": "see", "label": ""}, {"a": "see", "b": "ask", "label": "phone"}, {"a": "ask", "b": "yes", "label": "minutes", "delay": true, "focus": true}, {"a": "yes", "b": "cmp", "label": "", "focus": true}, {"a": "cmp", "b": "ok", "label": "", "focus": true}, {"a": "ok", "b": "go", "label": ""}, {"a": "go", "b": "short", "label": "hours", "delay": true}, {"a": "short", "b": "next", "label": "weeks", "delay": true}, {"a": "next", "b": "call", "label": "R3: the next gap", "back": true}]};
+// ---- Rendering ----
+const NS = "http://www.w3.org/2000/svg", H = 66;
+function el(tag, attrs, parent) { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+function lines(g, arr, x, y, step, cls, anchor) { (Array.isArray(arr) ? arr : [arr]).forEach((s, i) => { const t = el("text", { x, y: y + i * step, class: cls, "text-anchor": anchor || "start" }, g); t.textContent = s; }); }
+function marker(parent, n, x, y) { const g = el("g", { class: "marker" }, parent); el("circle", { cx: x, cy: y, r: 10 }, g); const t = el("text", { x, y: y + 0.5 }, g); t.textContent = n; }
+
+function render(svg, mode) {
+  const p = svg.id, frame = mode === "frame";
+  const defs = el("defs", {}, svg);
+  [["ink", "var(--ink)"], ["check", "var(--check)"], ["focus", "var(--focus)"]].forEach(([k, c]) => {
+    const m = el("marker", { id: `${p}-a-${k}`, viewBox: "0 0 10 10", refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: "auto-start-reverse", markerUnits: "userSpaceOnUse" }, defs);
+    el("path", { d: "M0,0 L10,5 L0,10 Z", fill: c }, m);
+  });
+  const L = { bands: el("g", {}, svg), edges: el("g", {}, svg), nodes: el("g", {}, svg), loops: el("g", {}, svg), marks: el("g", {}, svg) };
+  BANDS.forEach((b) => lines(L.bands, b.t, b.x, b.y, 0, "band"));
+  const state = (o) => (frame ? (o.focus ? " focus" : " muted") : "");
+
+  EDGES.forEach((e) => {
+    const kind = e.kind || "plain";
+    const g = el("g", { class: `edge ${kind}${state(e)}` }, L.edges);
+    const head = frame && e.focus ? "focus" : kind === "check" ? "check" : "ink";
+    el("path", { d: e.d, "marker-end": `url(#${p}-a-${head})` }, g);
+    if (e.label) lines(g, e.label, e.lx, e.ly, 13, "", e.anchor || "middle");
+    if (frame && e.ask) marker(L.marks, e.ask.n, e.ask.x, e.ask.y);
+  });
+  NODES.forEach((n) => {
+    const g = el("g", { class: `node${state(n)}` }, L.nodes);
+    el("rect", { x: n.x, y: n.y, width: n.w, height: H, rx: 6 }, g);
+    lines(g, n.t, n.x + 12, n.y + 24, 0, "title");
+    lines(g, n.s, n.x + 12, n.y + 42, 14, "sub");
+    if (frame && n.ask) marker(L.marks, n.ask.n, n.x + n.ask.dx, n.y + n.ask.dy);
+  });
+  LOOPS.forEach((l) => {
+    const g = el("g", { class: `loop ${l.kind}${state(l)}` }, L.loops);
+    el("circle", { cx: l.x, cy: l.y, r: 13 }, g);
+    const t = el("text", { x: l.x, y: l.y + 0.5, class: "tag" }, g); t.textContent = l.tag;
+    lines(g, l.name, l.x + 19, l.y + 4, 0, "name");
+    if (frame && l.ask) marker(L.marks, l.ask.n, l.ask.x, l.ask.y);
+  });
+}
+
+
+function renderProcess(svg, P) {
+  const p = svg.id, W = 1300, LW = 150, LH = 76, top = 8;
+  const colW = (W - LW - 10) / P.cols, H = top + P.lanes.length * LH + 40;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  const defs = el("defs", {}, svg);
+  [["ink", "var(--ink)"], ["check", "var(--check)"], ["focus", "var(--focus)"]].forEach(([k, c]) => {
+    const m = el("marker", { id: `${p}-a-${k}`, viewBox: "0 0 10 10", refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: "auto-start-reverse", markerUnits: "userSpaceOnUse" }, defs);
+    el("path", { d: "M0,0 L10,5 L0,10 Z", fill: c }, m);
+  });
+  const root = el("g", { class: "proc" }, svg);
+  const lanes = el("g", {}, root), links = el("g", {}, root), steps = el("g", {}, root), marks = el("g", {}, root);
+  P.lanes.forEach((name, i) => {
+    const g = el("g", { class: "lane" }, lanes);
+    el("rect", { x: 4, y: top + i * LH, width: W - 8, height: LH }, g);
+    lines(g, name.split("|"), 14, top + i * LH + 30, 14, "", "start");
+  });
+  const S = {};
+  P.steps.forEach((s) => {
+    const x = LW + s.col * colW + 5, y = top + s.lane * LH + 10, w = colW - 10, h = LH - 20;
+    S[s.id] = { x, y, w, h, cx: x + w / 2, cy: y + h / 2 };
+    const g = el("g", { class: "step" + (s.focus ? " focus" : "") }, steps);
+    el("rect", { x, y, width: w, height: h, rx: 5 }, g);
+    lines(g, s.t, x + 8, y + 19, 0, "title");
+    if (s.s) lines(g, s.s, x + 8, y + 34, 12, "sub");
+    if (s.ask) marker(marks, s.ask, x + w, y);
+  });
+  let backY = top + P.lanes.length * LH + 14;
+  P.links.forEach((l) => {
+    const a = S[l.a], b = S[l.b];
+    let d, lx, ly, cls = "link" + (l.focus ? " focus" : "");
+    if (l.back) {
+      cls += " back"; backY += 0;
+      d = `M${a.cx},${a.y + a.h} V${backY} H${b.cx} V${b.y + b.h + 2}`;
+      lx = (a.cx + b.cx) / 2; ly = backY - 4; backY += 12;
+    } else if (b.x > a.x + 1) {
+      const mx = b.x - 10;
+      d = Math.abs(a.cy - b.cy) < 2 ? `M${a.x + a.w},${a.cy} H${b.x - 2}` : `M${a.x + a.w},${a.cy} H${mx} V${b.cy} H${b.x - 2}`;
+      lx = Math.abs(a.cy - b.cy) < 2 ? (a.x + a.w + b.x) / 2 : mx - 4; ly = Math.abs(a.cy - b.cy) < 2 ? a.cy - 6 : (a.cy + b.cy) / 2;
+    } else {
+      const down = b.y > a.y;
+      d = `M${a.cx},${down ? a.y + a.h : a.y} V${down ? b.y - 2 : b.y + b.h + 2}`;
+      lx = a.cx + 6; ly = (down ? a.y + a.h + b.y : a.y + b.y + b.h) / 2 + 4;
+    }
+    const g = el("g", { class: cls }, links);
+    el("path", { d, "marker-end": `url(#${p}-a-${l.back ? "check" : l.focus ? "focus" : "ink"})` }, g);
+    if (l.label) { const t = el("text", { x: lx, y: ly, "text-anchor": (b.x > a.x + 1 && Math.abs(a.cy - b.cy) >= 2) ? "end" : (l.back ? "middle" : "start"), class: l.delay ? "delay" : "" }, g); t.textContent = l.label; }
+    if (l.ask) marker(marks, l.ask, lx, ly + 10);
+  });
+}
+
+render(document.getElementById("map-system"), "system");
+render(document.getElementById("map-frame"), "frame");
+renderProcess(document.getElementById("map-process"), PROCESS);
+</script>
+</body>
+</html>

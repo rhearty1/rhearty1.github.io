@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team Canary: Wastewater Surveillance System Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: same two-figure system-map format as the scholarly publishing map.
+   Figure 1 = the wider system; Figure 2 = the same map with the team's frame in blue and open questions in amber. */
+:root {
+  --bg: #f7f8f6; --panel: #ffffff; --ink: #18202b; --muted: #5d6673; --rule: #d5dad6; --node: #ffffff;
+  --check: #0d7468; --focus: #1d5fd1; --focus-soft: #e8f0fd; --ask: #b45309;
+  --font-display: "IBM Plex Serif", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-map: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg:#12161c; --panel:#181d25; --ink:#e6e9ee; --muted:#a0a8b4; --rule:#2d3440; --node:#1c222b; --check:#3fbfae; --focus:#7aa7ff; --focus-soft:#1d2a44; --ask:#f0a742; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg:#12161c; --panel:#181d25; --ink:#e6e9ee; --muted:#a0a8b4; --rule:#2d3440; --node:#1c222b; --check:#3fbfae; --focus:#7aa7ff; --focus-soft:#1d2a44; --ask:#f0a742; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
+main { max-width: 1240px; margin: 0 auto; padding: 32px 20px 64px; display: grid; gap: 26px; }
+.prose { max-width: 70ch; }
+.crumb { font-size: 0.85rem; color: var(--muted); }
+.crumb a { color: var(--muted); }
+h1, h2 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: 2rem; margin-top: 6px; }
+h2 { font-size: 1.3rem; }
+p { margin: 0 0 12px; }
+.lede { color: var(--muted); font-size: 1.05rem; }
+.meta { font-size: 0.88rem; color: var(--muted); }
+a { color: var(--focus); }
+blockquote { margin: 0; padding: 10px 14px; border-left: 3px solid var(--focus); background: var(--focus-soft); border-radius: 0 6px 6px 0; font-size: 0.95rem; }
+
+figure { margin: 0; background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 18px 14px; }
+.map-scroll { overflow-x: auto; }
+.map { display: block; width: 100%; min-width: 900px; height: auto; font-family: var(--font-map); }
+figcaption { font-size: 0.92rem; color: var(--muted); margin-top: 10px; max-width: 95ch; }
+figcaption b { color: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 0.85rem; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+
+.node rect, .node path.shape { fill: var(--node); stroke: var(--ink); stroke-width: 1.3; }
+.node path.fold { fill: none; stroke: var(--ink); stroke-width: 1.1; }
+.node .title { font-size: 13.5px; font-weight: 600; fill: var(--ink); }
+.node .sub { font-size: 11.5px; fill: var(--muted); }
+.node.focus rect, .node.focus path.shape { stroke: var(--focus); stroke-width: 2; fill: var(--focus-soft); }
+.node.focus .title { fill: var(--focus); }
+.band { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; fill: var(--muted); }
+
+.edge path { fill: none; stroke: var(--ink); stroke-width: 1.4; }
+.edge text { font-size: 11.5px; fill: var(--muted); }
+.edge.flow path { stroke-width: 2.6; }
+.edge.check path { stroke: var(--check); }
+.edge.check text { fill: var(--check); }
+.edge.focus path { stroke: var(--focus); stroke-width: 2.6; }
+.edge.focus text { fill: var(--focus); font-weight: 600; }
+
+.loop circle { fill: var(--panel); stroke-width: 1.5; }
+.loop .tag { font-size: 12px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+.loop .name { font-size: 12px; font-weight: 600; }
+.loop .gloss { font-size: 11px; fill: var(--muted); }
+.loop.R circle { stroke: var(--ink); } .loop.R .tag, .loop.R .name { fill: var(--ink); }
+.loop.B circle { stroke: var(--check); } .loop.B .tag, .loop.B .name { fill: var(--check); }
+.loop.focus circle { stroke: var(--focus); } .loop.focus .tag, .loop.focus .name { fill: var(--focus); }
+
+.marker circle { fill: var(--ask); }
+.marker text { fill: #fff; font-size: 11px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+.muted { opacity: 0.42; }
+
+.columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 26px; }
+ol.qs { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 14px; counter-reset: q; }
+ol.qs li { counter-increment: q; display: grid; grid-template-columns: 26px 1fr; gap: 10px; font-size: 0.94rem; }
+ol.qs li::before { content: counter(q); width: 22px; height: 22px; border-radius: 50%; background: var(--ask); color: #fff; font-size: 12px; font-weight: 600; display: grid; place-items: center; margin-top: 2px; }
+ol.qs b { display: block; }
+ul.plain { padding-left: 18px; margin: 10px 0 0; font-size: 0.93rem; }
+ul.plain li { margin-bottom: 8px; }
+.sources { font-size: 0.85rem; color: var(--muted); }
+
+.proc .lane rect { fill: none; stroke: var(--rule); }
+.proc .lane text { font-size: 12px; font-weight: 600; fill: var(--muted); }
+.proc .step rect { fill: var(--node); stroke: var(--ink); stroke-width: 1.2; }
+.proc .step .title { font-size: 12.5px; font-weight: 600; fill: var(--ink); }
+.proc .step .sub { font-size: 11px; fill: var(--muted); }
+.proc .step.focus rect { stroke: var(--focus); stroke-width: 2; fill: var(--focus-soft); }
+.proc .step.focus .title { fill: var(--focus); }
+.proc .link path { fill: none; stroke: var(--ink); stroke-width: 1.4; }
+.proc .link text { font-size: 11px; fill: var(--muted); }
+.proc .link.back path { stroke: var(--check); stroke-dasharray: 5 4; }
+.proc .link.back text { fill: var(--check); }
+.proc .link.focus path { stroke: var(--focus); stroke-width: 2.2; }
+.proc .link .delay { fill: var(--ask); font-style: italic; font-weight: 600; }
+.alt { display: grid; gap: 12px; margin-top: 10px; }
+.alt div { border: 1px solid var(--rule); border-left: 4px solid var(--check); border-radius: 6px; padding: 10px 14px; background: var(--panel); font-size: 0.94rem; }
+.alt div b { display: block; }
+.alt .where { color: var(--muted); font-size: 0.86rem; }
+.note { border: 1px dashed var(--ask); border-radius: 8px; padding: 10px 14px; font-size: 0.93rem; }
+</style>
+</head>
+<body>
+<main>
+  <header class="prose">
+    <div class="crumb"><a href="index.html">System maps</a> · Innovation &amp; Design I, Fall 2026 · Week 10 guidance</div>
+    <h1>Team Canary: Wastewater Surveillance System Map</h1>
+    <p class="lede">How a gastrointestinal outbreak at a training site or on a ship is detected and answered, drawn as one system. The second map shows where your project sits inside it; the third follows a single signal from a toilet to a decision.</p>
+    <p class="meta">Week 10 · Wicked Problems &amp; Systems Mapping · November 9, 2026</p>
+    <blockquote>Your refined problem: “Personnel in training establishments and on ships need timely, trustworthy population-level information about gastrointestinal infection risk. The project must establish how to obtain and interpret that information consistently, with manageable staffing and cost, so that medical and operational teams can respond proportionately before avoidable training or mission disruption occurs.”</blockquote>
+  </header>
+
+  <section class="prose" style="max-width:none">
+    <h2>Feedback for Team Canary</h2>
+    <div class="alt">
+      <div><b>What is working</b>Your evidence is carefully fenced, with every claimed difference from the existing vendor paired with the proof you would need, and your central insight is strong: the goal is a warning system people can act on, not a sensor.</div>
+      <div><b>How to push further</b>Much of your current work, especially the pipe-mounted sensor, sits on the speed and cost of detection, while your insight points at the decision. Norovirus may be a hard case for early warning, because symptoms start suddenly within a day or two and the sick parade may reach the medical officer first. Your burden source found contact with a sick colleague to be the strongest risk factor, which points at prevention as well as detection. A small note: the journal lists that paper as published in January 2025, and your deck cites 2026.</div>
+      <div><b>Where to next: research for this week</b>Ask one military medical officer, or a university health service for your second opportunity: in your last gastrointestinal outbreak, when did you first know, and what did you do? Ask your sponsor in writing what the existing vendor does not give them, and find out whether your first training site is sewered.</div>
+    </div>
+    <blockquote style="margin-top:14px">A question to bring to class: If the sick parade tells the medical officer before your sample reaches the lab, what is your project for?</blockquote>
+  </section>
+  <section class="note" style="max-width:none">
+    <h2 style="font-size:1.1rem">How I read your work</h2>
+    <p style="margin-top:8px">I read your deck and the teaching team's weekly summary of it, then drew the wider system your problem lives in, using your sources and a few of my own. I marked where your current frame sits, looked upstream and sideways for places where a change might matter more, and wrote what I found as questions rather than corrections. The questions follow three that research on feedback says matter most: where are you going, how are you going, and where to next. I drafted these maps with help from an AI assistant and checked them against your decks and the sources listed. They are a draft to argue with: if your research shows the map is wrong, that is a finding, and I want to hear it. <a href="index.html#black-box">More on the process</a>.</p>
+  </section>
+
+  <div class="legend" aria-label="Legend">
+    <span><svg width="30" height="18"><rect x="1" y="1" width="28" height="16" rx="3" fill="var(--node)" stroke="var(--ink)"/></svg>people, places &amp; institutions</span>
+    <span><svg width="30" height="10"><line x1="0" y1="5" x2="30" y2="5" stroke="var(--ink)" stroke-width="2.6"/></svg>the signal's path</span>
+    <span><svg width="30" height="10"><line x1="0" y1="5" x2="30" y2="5" stroke="var(--check)" stroke-width="2"/></svg>learning &amp; correction</span>
+    <span><svg width="30" height="18"><rect x="1" y="1" width="28" height="16" rx="3" fill="var(--focus-soft)" stroke="var(--focus)" stroke-width="2"/></svg>your team's current frame</span>
+    <span><svg width="22" height="22"><circle cx="11" cy="11" r="10" fill="var(--ask)"/></svg>a question worth exploring</span>
+  </div>
+  <figure>
+    <div class="map-scroll"><svg class="map" id="map-system" viewBox="0 0 1300 650" role="img" aria-label="System map"></svg></div>
+    <figcaption><b>Figure 1. The system.</b> The middle row follows a signal: people infect one another, shed virus into toilets and tanks, a sample is analysed and read, and someone decides what to do. The top row sets the scope and the rules for that decision. The bottom row holds the work that keeps monitoring alive, and two things that compete with it: prevention, which stops cases before there is anything to detect, and clinical surveillance, the sick parade, which usually reaches the medical officer first. B1 is your outbreak-control loop. R1 and R2 are yours too: workload slows response, and consistent monitoring builds the support that keeps it running. I added R3, cry wolf: at a small site, false alarms teach people to ignore the next reading.</figcaption>
+  </figure>
+  <figure>
+    <div class="map-scroll"><svg class="map" id="map-frame" viewBox="0 0 1300 650" role="img" aria-label="System map with the team's frame highlighted and numbered questions"></svg></div>
+    <figcaption><b>Figure 2. Where your project sits.</b> Blue marks what O1 and O3 work on: sampling, analysis, reading, and the staff time behind them. Your own central insight says the project is the signal-to-response pathway, yet most of the blue sits upstream of the decision. The amber numbers mark parts of the system that decide whether a faster, cheaper signal changes anything.</figcaption>
+  </figure>
+  <figure>
+    <div class="map-scroll"><svg class="map" id="map-process" role="img" aria-label="Swimlane process map"></svg></div>
+    <figcaption><b>Figure 3. The process.</b> One signal, step by step, with who does each step. Two paths reach the medical officer: the wastewater path in blue and the clinical path through the sick parade. The question for a norovirus pilot is which path arrives first, and what the medical officer would do differently with the earlier one.</figcaption>
+  </figure>
+  <section class="columns">
+    <div>
+      <h2>Questions worth exploring</h2>
+      <ol class="qs">
+        <li><span><b>Does wastewater beat the sick parade for norovirus?</b> CDC describes norovirus symptoms starting 12 to 48 hours after exposure, and they are sudden and hard to hide. On a training site, the first vomiting recruit may reach the medical officer before a sample reaches a lab. Wastewater's lead over clinical reporting is largest for infections that spread silently, such as COVID-19 or influenza. What is the lead time for norovirus, in hours, at your site?</span></li>
+        <li><span><b>What does your own burden source say causes the illness?</b> Toriro and colleagues found that contact with a colleague who had diarrhoea was the strongest risk factor in both Kenya and Oman, and that in Kenya eating locally sourced food and swimming in local water also raised risk; about half the Kenya cases fell in the first 14 days. That points at prevention as much as detection. The paper appears in <i>BMJ Military Health</i> with a January 2025 publication date, though your deck cites it as 2026; check which version you are citing.</span></li>
+        <li><span><b>Is there a sewer?</b> Your burden figures come from six-week exercises in Kenya and Oman, which may rely on field sanitation, while your sponsor wants training sites first and ships later. A sewered barracks at home, a field latrine abroad, and a ship's holding tank are three different sampling problems. Which catchment can you actually reach this semester?</span></li>
+        <li><span><b>What decision changes, and who makes it?</b> For norovirus the usual response is isolation, cleaning, and hygiene. If the medical officer does those things as soon as the first cases appear, a wastewater reading has to trigger something earlier or different to be worth its cost. Name the person and the decision.</span></li>
+        <li><span><b>What happens after two false alarms?</b> Your Week 9 deck reported a positive predictive value of 20 percent on the day of diagnosis at small Syracuse sites. A barracks block is a small site. If a reading pauses training and nothing follows, the next reading may be ignored (R3). A small catchment can also identify a unit, which raises privacy questions your WHO sources discuss.</span></li>
+        <li><span><b>What gap does Untap leave for your sponsor?</b> Untap already offers site-level qPCR, a same-day dashboard, baselines and anomaly flags, in defence settings. Your sponsor asked you not to reproduce it. Ask the sponsor in writing what Untap does not do for them: cost, ships, operating effort, or something else.</span></li>
+        <li><span><b>Who keeps it running after the pilot?</b> R2 can run downward. Your Week 9 deck noted the proposed cut to CDC's wastewater budget. At a training site, the sampling falls to staff who rotate. Who owns the monitoring in year two?</span></li>
+      </ol>
+    </div>
+    <div>
+      <h2>What this map leaves out</h2>
+      <ul class="plain">
+        <li>It treats all pathogens alike. Norovirus, adenovirus, influenza and COVID-19 differ in incubation, shedding and how obvious the symptoms are, which changes the value of an early signal.</li>
+        <li>It shows one site. Training establishments, exercises abroad and ships each have different plumbing, staff and chains of command.</li>
+        <li>Clinical surveillance is drawn as one box. In practice it includes sick parade, ward reporting and laboratory confirmation, each with its own delay.</li>
+        <li>I did not check the Untap claims or the Syracuse figure; both come from your decks.</li>
+      </ul>
+      <h2 style="margin-top:22px">Sources</h2>
+      <ul class="plain sources">
+        <li><a href="https://militaryhealth.bmj.com/">Toriro et al., “Epidemiology and impact of travellers' diarrhoea differs during UK military training exercises in Kenya and Oman,” <i>BMJ Military Health</i> (published January 25, 2025)</a></li>
+        <li><a href="https://archive.lstmed.ac.uk/26081/1/military-2024-002913.full.pdf">Full text of Toriro et al., LSTM archive</a></li>
+        <li><a href="https://www.cdc.gov/norovirus/">CDC, norovirus</a></li>
+        <li>Your team's Week 8 to 10 submissions</li>
+      </ul>
+    </div>
+  </section>
+  <section class="prose" style="max-width:none">
+    <h2>Other problems in this space</h2>
+    <p class="meta">Each is a problem statement another team could have chosen from the same map. They are not better by default. Compare each with yours: who wakes up with it, how much of the system it moves, and whether you can reach the people who have it this semester.</p>
+    <div class="alt">
+      <div><b>Stop the spread in the first two weeks.</b>How might units on overseas exercises reduce person-to-person spread of gastrointestinal illness in the first 14 days, when about half of Kenya's cases occurred?<div class="where">Where it sits: Prevention, bottom left. Acts on the inflow to the whole system, before there is a signal to detect.</div></div>
+      <div><b>Make the signal change a decision.</b>What should a medical officer do differently with a wastewater reading than with the first sick parade, and at what threshold?<div class="where">Where it sits: Reading to decision. Your own Week 9 deck called this the next bottleneck once results are fast.</div></div>
+      <div><b>Ships at sea, where there is no lab.</b>How can a ship's medical team learn what is circulating aboard during a long deployment, when samples cannot be sent ashore?<div class="where">Where it sits: Toilets and tanks, then sample and analysis, on a ship. Your sponsor put ships second, but this is where a portable sensor has the clearest advantage over a lab.</div></div>
+      <div><b>Keep monitoring alive.</b>O1, monitoring consistency, already in your deck: how can a site keep valid, timely results through staff turnover and workload peaks?<div class="where">Where it sits: Site staff time and R2. A process problem, not a sensor problem.</div></div>
+    </div>
+  </section>
+</main>
+<script>
+const BANDS = [{"t": "Rules, sponsor & guidance", "x": 30, "y": 28}, {"t": "The signal's path, from people to a decision", "x": 30, "y": 278}, {"t": "Work that sustains & competes with the system", "x": 30, "y": 468}];
+const NODES = [{"id": "sponsor", "x": 360, "y": 40, "w": 270, "t": "Sponsor brief", "s": ["training sites first,", "norovirus, low cost, not Untap"]}, {"id": "guide", "x": 680, "y": 40, "w": 270, "t": "Public-health guidance", "s": ["WHO 2024, CDC: wastewater methods;", "no agreed action thresholds"]}, {"id": "duty", "x": 1000, "y": 40, "w": 275, "t": "Force health protection", "s": ["medical officer advises;", "commander decides"]}, {"id": "people", "x": 30, "y": 290, "w": 170, "t": "Recruits & crews", "s": ["close quarters, shared", "food and washrooms"]}, {"id": "shed", "x": 235, "y": 290, "w": 175, "t": "Infection & shedding", "s": ["norovirus onset 12-48 h;", "sudden, obvious symptoms"]}, {"id": "pipe", "x": 445, "y": 290, "w": 175, "t": "Toilets & tanks", "s": ["sewered barracks, ship", "holding tanks, latrines?"], "focus": true, "ask": {"n": 3, "dx": 175, "dy": 0}}, {"id": "sample", "x": 655, "y": 290, "w": 180, "t": "Sample & analysis", "s": ["sampler or sensor;", "qPCR lab, days of delay"], "focus": true}, {"id": "read", "x": 870, "y": 290, "w": 170, "t": "Reading", "s": ["trend vs baseline;", "small-site false alarms"], "focus": true, "ask": {"n": 5, "dx": 170, "dy": 0}}, {"id": "act", "x": 1075, "y": 290, "w": 200, "t": "Decision & response", "s": ["isolate, clean, pause", "training, or do nothing"], "ask": {"n": 4, "dx": 200, "dy": 0}}, {"id": "prev", "x": 30, "y": 480, "w": 175, "t": "Prevention", "s": ["hand hygiene, food,", "water, cleaning"], "ask": {"n": 2, "dx": 175, "dy": 0}}, {"id": "clinic", "x": 235, "y": 480, "w": 180, "t": "Clinical surveillance", "s": ["sick parade, D&V reports,", "stool tests"], "ask": {"n": 1, "dx": 180, "dy": 0}}, {"id": "staff", "x": 445, "y": 480, "w": 175, "t": "Site staff time", "s": ["who samples, maintains,", "restores after failure"], "focus": true}, {"id": "vendor", "x": 655, "y": 480, "w": 180, "t": "Vendors & labs", "s": ["Untap: qPCR, same-day", "dashboard, defence clients"], "ask": {"n": 6, "dx": 180, "dy": 0}}, {"id": "fund", "x": 870, "y": 480, "w": 190, "t": "Funding & continuity", "s": ["who pays after", "the pilot ends"], "ask": {"n": 7, "dx": 190, "dy": 0}}];
+const EDGES = [{"d": "M200,323 H232", "label": "spread", "lx": 217.5, "ly": 283, "kind": "flow"}, {"d": "M410,323 H442", "label": "shed", "lx": 427.5, "ly": 283, "kind": "flow"}, {"d": "M620,323 H652", "label": "collect", "lx": 637.5, "ly": 283, "kind": "flow", "focus": true}, {"d": "M835,323 H867", "label": "report", "lx": 852.5, "ly": 283, "kind": "flow", "focus": true}, {"d": "M1040,323 H1072", "label": "interpret", "lx": 1057.5, "ly": 283, "kind": "flow"}, {"d": "M560,106 V287", "label": "scope: sites, norovirus", "lx": 567, "ly": 200.5, "anchor": "start"}, {"d": "M950,106 V287", "label": ["methods,", "no thresholds"], "lx": 943, "ly": 200.5, "anchor": "end"}, {"d": "M1180,106 V287", "label": "who decides", "lx": 1187, "ly": 200.5, "anchor": "start"}, {"d": "M118,480 V359", "label": ["hygiene,", "food, water"], "lx": 125, "ly": 423.5, "anchor": "start"}, {"d": "M322,480 V359", "label": "report sick", "lx": 329, "ly": 423.5, "anchor": "start"}, {"d": "M532,480 V359", "label": ["sample,", "maintain"], "lx": 539, "ly": 423.5, "anchor": "start", "focus": true}, {"d": "M745,480 V359", "label": "assays, kits", "lx": 752, "ly": 423.5, "anchor": "start"}, {"d": "M870,530 H838", "label": "pays", "lx": 852.5, "ly": 522}, {"d": "M1175,290 C1175,190 322,190 322,287", "label": "contain (B1)", "lx": 748.5, "ly": 224, "kind": "check"}, {"d": "M322,546 V625 H1250 V359", "label": "first cases often reach the medical officer this way", "lx": 786.0, "ly": 619}];
+const LOOPS = [{"tag": "B1", "x": 700, "y": 245, "name": "Outbreak control", "kind": "B"}, {"tag": "R1", "x": 545, "y": 600, "name": "Workload & delay", "kind": "R", "focus": true}, {"tag": "R2", "x": 1110, "y": 520, "name": "Monitoring value", "kind": "R"}, {"tag": "R3", "x": 960, "y": 245, "name": "Cry wolf", "kind": "R"}];
+
+const PROCESS = {"cols": 9, "lanes": ["Recruits|or crew", "Site staff", "Lab or|vendor", "Medical|officer", "Commander"], "steps": [{"id": "exp", "lane": 0, "col": 0, "t": "Exposure", "s": ["colleague, food,", "water"], "ask": 2}, {"id": "inf", "lane": 0, "col": 1, "t": "Infected", "s": ["shedding begins"]}, {"id": "sick", "lane": 0, "col": 3, "t": "Reports sick", "s": ["vomiting,", "diarrhoea"]}, {"id": "col", "lane": 1, "col": 2, "t": "Collect sample", "s": ["sewer, tank,", "passive sampler"], "focus": true, "ask": 3}, {"id": "ana", "lane": 2, "col": 3, "t": "Analyse", "s": ["qPCR or sensor"], "focus": true}, {"id": "rep", "lane": 2, "col": 4, "t": "Report", "s": ["dashboard,", "anomaly flag"], "focus": true, "ask": 6}, {"id": "assess", "lane": 3, "col": 4, "t": "Assess patient", "s": ["stool test?"], "ask": 1}, {"id": "interp", "lane": 3, "col": 5, "t": "Interpret", "s": ["real rise or", "noise?"], "ask": 5}, {"id": "rec", "lane": 3, "col": 6, "t": "Recommend", "s": ["isolate, clean,", "hygiene brief"]}, {"id": "dec", "lane": 4, "col": 7, "t": "Decide", "s": ["pause or carry", "on training"], "ask": 4}, {"id": "resp", "lane": 0, "col": 8, "t": "Response", "s": ["isolation,", "cleaning"]}], "links": [{"a": "exp", "b": "inf", "label": "12-48 h", "delay": true}, {"a": "inf", "b": "col", "label": "toilets", "focus": true}, {"a": "col", "b": "ana", "label": "transport", "focus": true}, {"a": "ana", "b": "rep", "label": "days", "delay": true, "focus": true}, {"a": "rep", "b": "interp", "label": "", "focus": true}, {"a": "inf", "b": "sick", "label": "hours", "delay": true}, {"a": "sick", "b": "assess", "label": ""}, {"a": "assess", "b": "rec", "label": "first cases"}, {"a": "interp", "b": "rec", "label": ""}, {"a": "rec", "b": "dec", "label": ""}, {"a": "dec", "b": "resp", "label": ""}, {"a": "resp", "b": "exp", "label": "fewer exposures (B1)", "back": true}]};
+// ---- Rendering ----
+const NS = "http://www.w3.org/2000/svg", H = 66;
+function el(tag, attrs, parent) { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+function lines(g, arr, x, y, step, cls, anchor) { (Array.isArray(arr) ? arr : [arr]).forEach((s, i) => { const t = el("text", { x, y: y + i * step, class: cls, "text-anchor": anchor || "start" }, g); t.textContent = s; }); }
+function marker(parent, n, x, y) { const g = el("g", { class: "marker" }, parent); el("circle", { cx: x, cy: y, r: 10 }, g); const t = el("text", { x, y: y + 0.5 }, g); t.textContent = n; }
+
+function render(svg, mode) {
+  const p = svg.id, frame = mode === "frame";
+  const defs = el("defs", {}, svg);
+  [["ink", "var(--ink)"], ["check", "var(--check)"], ["focus", "var(--focus)"]].forEach(([k, c]) => {
+    const m = el("marker", { id: `${p}-a-${k}`, viewBox: "0 0 10 10", refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: "auto-start-reverse", markerUnits: "userSpaceOnUse" }, defs);
+    el("path", { d: "M0,0 L10,5 L0,10 Z", fill: c }, m);
+  });
+  const L = { bands: el("g", {}, svg), edges: el("g", {}, svg), nodes: el("g", {}, svg), loops: el("g", {}, svg), marks: el("g", {}, svg) };
+  BANDS.forEach((b) => lines(L.bands, b.t, b.x, b.y, 0, "band"));
+  const state = (o) => (frame ? (o.focus ? " focus" : " muted") : "");
+
+  EDGES.forEach((e) => {
+    const kind = e.kind || "plain";
+    const g = el("g", { class: `edge ${kind}${state(e)}` }, L.edges);
+    const head = frame && e.focus ? "focus" : kind === "check" ? "check" : "ink";
+    el("path", { d: e.d, "marker-end": `url(#${p}-a-${head})` }, g);
+    if (e.label) lines(g, e.label, e.lx, e.ly, 13, "", e.anchor || "middle");
+    if (frame && e.ask) marker(L.marks, e.ask.n, e.ask.x, e.ask.y);
+  });
+  NODES.forEach((n) => {
+    const g = el("g", { class: `node${state(n)}` }, L.nodes);
+    el("rect", { x: n.x, y: n.y, width: n.w, height: H, rx: 6 }, g);
+    lines(g, n.t, n.x + 12, n.y + 24, 0, "title");
+    lines(g, n.s, n.x + 12, n.y + 42, 14, "sub");
+    if (frame && n.ask) marker(L.marks, n.ask.n, n.x + n.ask.dx, n.y + n.ask.dy);
+  });
+  LOOPS.forEach((l) => {
+    const g = el("g", { class: `loop ${l.kind}${state(l)}` }, L.loops);
+    el("circle", { cx: l.x, cy: l.y, r: 13 }, g);
+    const t = el("text", { x: l.x, y: l.y + 0.5, class: "tag" }, g); t.textContent = l.tag;
+    lines(g, l.name, l.x + 19, l.y + 4, 0, "name");
+    if (frame && l.ask) marker(L.marks, l.ask.n, l.ask.x, l.ask.y);
+  });
+}
+
+
+function renderProcess(svg, P) {
+  const p = svg.id, W = 1300, LW = 150, LH = 76, top = 8;
+  const colW = (W - LW - 10) / P.cols, H = top + P.lanes.length * LH + 40;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  const defs = el("defs", {}, svg);
+  [["ink", "var(--ink)"], ["check", "var(--check)"], ["focus", "var(--focus)"]].forEach(([k, c]) => {
+    const m = el("marker", { id: `${p}-a-${k}`, viewBox: "0 0 10 10", refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: "auto-start-reverse", markerUnits: "userSpaceOnUse" }, defs);
+    el("path", { d: "M0,0 L10,5 L0,10 Z", fill: c }, m);
+  });
+  const root = el("g", { class: "proc" }, svg);
+  const lanes = el("g", {}, root), links = el("g", {}, root), steps = el("g", {}, root), marks = el("g", {}, root);
+  P.lanes.forEach((name, i) => {
+    const g = el("g", { class: "lane" }, lanes);
+    el("rect", { x: 4, y: top + i * LH, width: W - 8, height: LH }, g);
+    lines(g, name.split("|"), 14, top + i * LH + 30, 14, "", "start");
+  });
+  const S = {};
+  P.steps.forEach((s) => {
+    const x = LW + s.col * colW + 5, y = top + s.lane * LH + 10, w = colW - 10, h = LH - 20;
+    S[s.id] = { x, y, w, h, cx: x + w / 2, cy: y + h / 2 };
+    const g = el("g", { class: "step" + (s.focus ? " focus" : "") }, steps);
+    el("rect", { x, y, width: w, height: h, rx: 5 }, g);
+    lines(g, s.t, x + 8, y + 19, 0, "title");
+    if (s.s) lines(g, s.s, x + 8, y + 34, 12, "sub");
+    if (s.ask) marker(marks, s.ask, x + w, y);
+  });
+  let backY = top + P.lanes.length * LH + 14;
+  P.links.forEach((l) => {
+    const a = S[l.a], b = S[l.b];
+    let d, lx, ly, cls = "link" + (l.focus ? " focus" : "");
+    if (l.back) {
+      cls += " back"; backY += 0;
+      d = `M${a.cx},${a.y + a.h} V${backY} H${b.cx} V${b.y + b.h + 2}`;
+      lx = (a.cx + b.cx) / 2; ly = backY - 4; backY += 12;
+    } else if (b.x > a.x + 1) {
+      const mx = b.x - 10;
+      d = Math.abs(a.cy - b.cy) < 2 ? `M${a.x + a.w},${a.cy} H${b.x - 2}` : `M${a.x + a.w},${a.cy} H${mx} V${b.cy} H${b.x - 2}`;
+      lx = Math.abs(a.cy - b.cy) < 2 ? (a.x + a.w + b.x) / 2 : mx - 4; ly = Math.abs(a.cy - b.cy) < 2 ? a.cy - 6 : (a.cy + b.cy) / 2;
+    } else {
+      const down = b.y > a.y;
+      d = `M${a.cx},${down ? a.y + a.h : a.y} V${down ? b.y - 2 : b.y + b.h + 2}`;
+      lx = a.cx + 6; ly = (down ? a.y + a.h + b.y : a.y + b.y + b.h) / 2 + 4;
+    }
+    const g = el("g", { class: cls }, links);
+    el("path", { d, "marker-end": `url(#${p}-a-${l.back ? "check" : l.focus ? "focus" : "ink"})` }, g);
+    if (l.label) { const t = el("text", { x: lx, y: ly, "text-anchor": (b.x > a.x + 1 && Math.abs(a.cy - b.cy) >= 2) ? "end" : (l.back ? "middle" : "start"), class: l.delay ? "delay" : "" }, g); t.textContent = l.label; }
+    if (l.ask) marker(marks, l.ask, lx, ly + 10);
+  });
+}
+
+render(document.getElementById("map-system"), "system");
+render(document.getElementById("map-frame"), "frame");
+renderProcess(document.getElementById("map-process"), PROCESS);
+</script>
+</body>
+</html>

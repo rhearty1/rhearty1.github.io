@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 10 Guidance: System Maps</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: same two-figure system-map format as the scholarly publishing map.
+   Figure 1 = the wider system; Figure 2 = the same map with the team's frame in blue and open questions in amber. */
+:root {
+  --bg: #f7f8f6; --panel: #ffffff; --ink: #18202b; --muted: #5d6673; --rule: #d5dad6; --node: #ffffff;
+  --check: #0d7468; --focus: #1d5fd1; --focus-soft: #e8f0fd; --ask: #b45309;
+  --font-display: "IBM Plex Serif", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-map: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg:#12161c; --panel:#181d25; --ink:#e6e9ee; --muted:#a0a8b4; --rule:#2d3440; --node:#1c222b; --check:#3fbfae; --focus:#7aa7ff; --focus-soft:#1d2a44; --ask:#f0a742; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg:#12161c; --panel:#181d25; --ink:#e6e9ee; --muted:#a0a8b4; --rule:#2d3440; --node:#1c222b; --check:#3fbfae; --focus:#7aa7ff; --focus-soft:#1d2a44; --ask:#f0a742; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
+main { max-width: 1240px; margin: 0 auto; padding: 32px 20px 64px; display: grid; gap: 26px; }
+.prose { max-width: 70ch; }
+.crumb { font-size: 0.85rem; color: var(--muted); }
+.crumb a { color: var(--muted); }
+h1, h2 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: 2rem; margin-top: 6px; }
+h2 { font-size: 1.3rem; }
+p { margin: 0 0 12px; }
+.lede { color: var(--muted); font-size: 1.05rem; }
+.meta { font-size: 0.88rem; color: var(--muted); }
+a { color: var(--focus); }
+blockquote { margin: 0; padding: 10px 14px; border-left: 3px solid var(--focus); background: var(--focus-soft); border-radius: 0 6px 6px 0; font-size: 0.95rem; }
+
+figure { margin: 0; background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 18px 14px; }
+.map-scroll { overflow-x: auto; }
+.map { display: block; width: 100%; min-width: 900px; height: auto; font-family: var(--font-map); }
+figcaption { font-size: 0.92rem; color: var(--muted); margin-top: 10px; max-width: 95ch; }
+figcaption b { color: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 0.85rem; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+
+.node rect, .node path.shape { fill: var(--node); stroke: var(--ink); stroke-width: 1.3; }
+.node path.fold { fill: none; stroke: var(--ink); stroke-width: 1.1; }
+.node .title { font-size: 13.5px; font-weight: 600; fill: var(--ink); }
+.node .sub { font-size: 11.5px; fill: var(--muted); }
+.node.focus rect, .node.focus path.shape { stroke: var(--focus); stroke-width: 2; fill: var(--focus-soft); }
+.node.focus .title { fill: var(--focus); }
+.band { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; fill: var(--muted); }
+
+.edge path { fill: none; stroke: var(--ink); stroke-width: 1.4; }
+.edge text { font-size: 11.5px; fill: var(--muted); }
+.edge.flow path { stroke-width: 2.6; }
+.edge.check path { stroke: var(--check); }
+.edge.check text { fill: var(--check); }
+.edge.focus path { stroke: var(--focus); stroke-width: 2.6; }
+.edge.focus text { fill: var(--focus); font-weight: 600; }
+
+.loop circle { fill: var(--panel); stroke-width: 1.5; }
+.loop .tag { font-size: 12px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+.loop .name { font-size: 12px; font-weight: 600; }
+.loop .gloss { font-size: 11px; fill: var(--muted); }
+.loop.R circle { stroke: var(--ink); } .loop.R .tag, .loop.R .name { fill: var(--ink); }
+.loop.B circle { stroke: var(--check); } .loop.B .tag, .loop.B .name { fill: var(--check); }
+.loop.focus circle { stroke: var(--focus); } .loop.focus .tag, .loop.focus .name { fill: var(--focus); }
+
+.marker circle { fill: var(--ask); }
+.marker text { fill: #fff; font-size: 11px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+.muted { opacity: 0.42; }
+
+.columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 26px; }
+ol.qs { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 14px; counter-reset: q; }
+ol.qs li { counter-increment: q; display: grid; grid-template-columns: 26px 1fr; gap: 10px; font-size: 0.94rem; }
+ol.qs li::before { content: counter(q); width: 22px; height: 22px; border-radius: 50%; background: var(--ask); color: #fff; font-size: 12px; font-weight: 600; display: grid; place-items: center; margin-top: 2px; }
+ol.qs b { display: block; }
+ul.plain { padding-left: 18px; margin: 10px 0 0; font-size: 0.93rem; }
+ul.plain li { margin-bottom: 8px; }
+.sources { font-size: 0.85rem; color: var(--muted); }
+
+.proc .lane rect { fill: none; stroke: var(--rule); }
+.proc .lane text { font-size: 12px; font-weight: 600; fill: var(--muted); }
+.proc .step rect { fill: var(--node); stroke: var(--ink); stroke-width: 1.2; }
+.proc .step .title { font-size: 12.5px; font-weight: 600; fill: var(--ink); }
+.proc .step .sub { font-size: 11px; fill: var(--muted); }
+.proc .step.focus rect { stroke: var(--focus); stroke-width: 2; fill: var(--focus-soft); }
+.proc .step.focus .title { fill: var(--focus); }
+.proc .link path { fill: none; stroke: var(--ink); stroke-width: 1.4; }
+.proc .link text { font-size: 11px; fill: var(--muted); }
+.proc .link.back path { stroke: var(--check); stroke-dasharray: 5 4; }
+.proc .link.back text { fill: var(--check); }
+.proc .link.focus path { stroke: var(--focus); stroke-width: 2.2; }
+.proc .link .delay { fill: var(--ask); font-style: italic; font-weight: 600; }
+.alt { display: grid; gap: 12px; margin-top: 10px; }
+.alt div { border: 1px solid var(--rule); border-left: 4px solid var(--check); border-radius: 6px; padding: 10px 14px; background: var(--panel); font-size: 0.94rem; }
+.alt div b { display: block; }
+.alt .where { color: var(--muted); font-size: 0.86rem; }
+.note { border: 1px dashed var(--ask); border-radius: 8px; padding: 10px 14px; font-size: 0.93rem; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.card { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 14px 18px; font-size: 0.94rem; }
+.card h3 { font-family: var(--font-display); font-size: 1.15rem; margin: 0 0 2px; }
+.card .who { color: var(--muted); font-size: 0.86rem; margin-bottom: 8px; }
+.card p { font-style: italic; border-left: 3px solid var(--ask); padding-left: 10px; margin: 0; }
+.steps { counter-reset: s; list-style: none; padding: 0; display: grid; gap: 12px; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 30px 1fr; gap: 10px; font-size: 0.95rem; }
+.steps li::before { content: counter(s); width: 24px; height: 24px; border-radius: 50%; background: var(--check); color: #fff; font-size: 12px; font-weight: 600; display: grid; place-items: center; }
+.steps b { display: block; }
+</style>
+</head>
+<body>
+<main>
+  <header class="prose">
+    <div class="crumb">Innovation &amp; Design I, Fall 2026 · Week 10 · Wicked Problems & Systems Mapping · November 9, 2026</div>
+    <h1>Week 10 guidance: system maps</h1>
+    <p class="lede">Each team gets a page with three maps of its problem space: the whole system, where your current frame sits in it, and a process map that follows one case step by step. Each page also has feedback written for your team. Start with your own page, then read one other team's: you will often see your own blind spot more easily in someone else's map.</p>
+  </header>
+
+  <section>
+    <h2 style="margin-bottom:12px">The teams</h2>
+    <div class="cards">
+    <div class="card"><h3><a href="handoff.html">Team Handoff</a></h3>
+      <div class="who">the first report when someone's health changes</div>
+      <p>What does your report card do that a MIST report and a triage nurse's protocol do not?</p></div>
+    <div class="card"><h3><a href="night-shift.html">Team Night Shift</a></h3>
+      <div class="who">covering unexpected overnight gaps</div>
+      <p>Where do your unexpected gaps come from, and does your sponsor know where your project has gone?</p></div>
+    <div class="card"><h3><a href="quad-squad.html">Team Quad Squad</a></h3>
+      <div class="who">recovery after ACL reconstruction</div>
+      <p>Is strength what keeps patients from returning, and how would you find out?</p></div>
+    <div class="card"><h3><a href="level-head.html">Team Level Head</a></h3>
+      <div class="who">motion reaching a casualty's head during evacuation</div>
+      <p>Once your number exists, whose decision changes?</p></div>
+    <div class="card"><h3><a href="canary.html">Team Canary</a></h3>
+      <div class="who">early warning of outbreaks from wastewater</div>
+      <p>If the sick parade tells the medical officer before your sample reaches the lab, what is your project for?</p></div>
+    </div>
+  </section>
+
+  <section class="columns" id="black-box">
+    <div>
+      <h2>Opening the black box: how I read your work</h2>
+      <p>Feedback works best when you can see how it was made, so here is my process. I read your deck and the teaching team's summary of it. I drew the wider system your problem sits in, from your sources and a few of my own, and then a process map of one case moving through it. I marked your current frame in blue and asked two questions of everything else on the map: is anything upstream of your box causing what you are trying to fix, and is anything beside it a bigger lever? I wrote what I found as numbered questions, not corrections, because you know your problem better than I do, and some questions will confirm your focus rather than change it.</p>
+      <p>I organized your feedback around three questions that John Hattie and Helen Timperley identified in their review of research on feedback: where am I going, how am I going, and where to next? Feedback that answers only the second question, a verdict, tends to change little; the third is where learning happens.</p>
+      <p>I drafted the maps with help from an AI assistant and checked them against your decks and the listed sources. Where I read only an abstract, the page says so. Treat each map as a draft to argue with. If your research shows it is wrong, that is a finding.</p>
+    </div>
+    <div>
+      <h2>Why I keep asking you to slow down</h2>
+      <p>When Cynthia Atman and her colleagues compared how student and expert engineers worked on the same design problem, one of the largest differences was problem scoping: experts spent more time understanding the problem and gathered more information, across more kinds of sources, before settling on a design. Students tend to move to a solution quickly. That is not a character flaw; it is what novices do, and it is learnable.</p>
+      <p>A pattern across this week's submissions: the research is mostly reading, and much of it arrives after the solution has been chosen. The maps help because each one shows something upstream of the team's box. Interviews with people who have the problem are the fastest way to test whether your box is in the right place.</p>
+      <h2 style="margin-top:20px">System map or process map?</h2>
+      <p>Both. The middle row of each system map is already a process: the path a signal, a patient or a gap takes. The process map zooms into that row and adds who does each step and how long each handoff takes. The system map shows why a problem persists; the process map shows where the time and the handoffs go. Start with one real case as a process, then draw the loops that explain it.</p>
+    </div>
+  </section>
+
+  <section class="prose" style="max-width:none">
+    <h2>Eight moves to slow the rush to a solution</h2>
+    <ol class="steps">
+      <li><span><b>Use your map as an interview instrument.</b> Show your system map to three people inside the system, at least one of them someone who has the problem, and ask: what is wrong, what is missing, where would you push? Revise the map and note who changed it. A map is easier to argue with than a blank page, and it gives you a reason to ask for the meeting.</span></li>
+      <li><span><b>Walk one real case before drawing loops.</b> Build a process map from one documented incident or one person's day, with times. It shows where the delays and handoffs are, and it tests the loops you have guessed.</span></li>
+      <li><span><b>Place your idea on the leverage ladder.</b> Donella Meadows ranks places to intervene from numbers and buffers, through delays and feedback, to information flows, rules, goals and paradigms. A faster sensor works on delays; who sees the result, and what they are allowed to do with it, sit higher. Ask what the information-flow or rule version of your idea would be.</span></li>
+      <li><span><b>Ask why three times, then redraw.</b> Each answer moves your box upstream. If the box moves, your problem statement should too.</span></li>
+      <li><span><b>Name one person and one moment.</b> Who wakes up with this problem, when exactly does it bite, and what do they do today instead? The workaround is evidence that the problem is real.</span></li>
+      <li><span><b>Strike the solution words.</b> Delete every device, app, AI, dashboard or sensor from your problem statement. If what remains still says something, you have a problem statement; if not, you have a solution in disguise.</span></li>
+      <li><span><b>Mark every link known, supposed, or to find out.</b> Draw sourced links solid and supposed links dashed, and turn each dashed link into a research task. Your research then has a list.</span></li>
+      <li><span><b>State your kill result in advance.</b> What finding would make you drop this idea? Writing it down now protects you from defending a solution after the evidence turns.</span></li>
+    </ol>
+  </section>
+
+  <section class="prose">
+    <h2>Readings behind this page</h2>
+    <ul class="plain sources">
+      <li>John Hattie and Helen Timperley, “The Power of Feedback,” <i>Review of Educational Research</i> 77, no. 1 (2007): 81–112. [Why your feedback is organized as where you are going, how you are going, and where to next.]</li>
+      <li>Cynthia J. Atman et al., “Engineering Design Processes: A Comparison of Students and Expert Practitioners,” <i>Journal of Engineering Education</i> 96, no. 4 (2007): 359–79, <a href="https://doi.org/10.1002/j.2168-9830.2007.tb00945.x">doi:10.1002/j.2168-9830.2007.tb00945.x</a>. [Why problem scoping is where experts and novices differ most.]</li>
+      <li>Donella H. Meadows, <i>Leverage Points: Places to Intervene in a System</i> (Sustainability Institute, 1999). [The ladder used on every map.]</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
